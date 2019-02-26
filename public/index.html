@@ -1,31 +1,215 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!DOCTYPE <!DOCTYPE html>
+<html>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>scriptr</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.webticker/3.0.0/jquery.webticker.min.js"></script>
+    <style>
+        /* .ui.main.grid {
+            left: 18.75%;
+            position: relative;
+            width: 81.25%;
+        } */
+
+
+        /*// Semantic UI has these classes, however they're only applicable to
+    // grids, containers, rows and columns.
+    // plus, there isn't any `mobile hidden`, `X hidden` class.
+    // this snippet is using the same class names and same approach
+    // plus a bit more but to all elements.
+    //
+    // see https://github.com/Semantic-Org/Semantic-UI/issues/1114*/
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+
+            [class*="mobile hidden"],
+            [class*="tablet only"]:not(.mobile),
+            [class*="computer only"]:not(.mobile),
+            [class*="lrg screen only"]:not(.mobile),
+            [class*="widescreen only"]:not(.mobile),
+            [class*="or lower hidden"] {
+                display: none !important;
+            }
+        }
+
+        /* Tablet / iPad Portrait */
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+            [class*="mobile only"]:not(.tablet),
+            [class*="tablet hidden"],
+            [class*="computer only"]:not(.tablet),
+            [class*="lrg screen only"]:not(.tablet),
+            [class*="widescreen only"]:not(.tablet),
+            [class*="or lower hidden"]:not(.mobile) {
+                display: none !important;
+            }
+        }
+
+        /* Computer / Desktop / iPad Landscape */
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+            [class*="mobile only"]:not(.computer),
+            [class*="tablet only"]:not(.computer),
+            [class*="computer hidden"],
+            [class*="lrg screen only"]:not(.computer),
+            [class*="widescreen only"]:not(.computer),
+            [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+                display: none !important;
+            }
+        }
+
+        /* lrg Monitor */
+        @media only screen and (min-width: 1200px) and (max-width: 1919px) {
+
+            [class*="mobile only"]:not([class*="lrg screen"]),
+            [class*="tablet only"]:not([class*="lrg screen"]),
+            [class*="computer only"]:not([class*="lrg screen"]),
+            [class*="lrg screen hidden"],
+            [class*="widescreen only"]:not([class*="lrg screen"]),
+            [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+                display: none !important;
+            }
+        }
+
+        /* Widescreen Monitor */
+        @media only screen and (min-width: 1920px) {
+
+            [class*="mobile only"]:not([class*="widescreen"]),
+            [class*="tablet only"]:not([class*="widescreen"]),
+            [class*="computer only"]:not([class*="widescreen"]),
+            [class*="lrg screen only"]:not([class*="widescreen"]),
+            [class*="widescreen hidden"],
+            [class*="widescreen or lower hidden"] {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style='background-color:rgba(52,255,189,1);width:100%;height:100%;position:fixed;top:0'>
+      
     <div id="root"></div>
+    
+    <!-- Sidebar for large screens -->
+    <div id="large-sidebar"
+        class="ui left vertical inverted sidebar menu computer lrg screen widescreen only" style="background-color:rgba(255,93,72,.75)">
+        <a class="ui card" href="/profile">
+            <div class="image">
+                <img src="https://semantic-ui.com/images/avatar2/large/kristy.png">
+            </div>
+            <a class="content">
+                <a class="header" href="/profile"><h3 style="color:white">Helen</h3></a>
+                <div class="meta">
+                    <span style="color:white">Super-Coder (Level 43)</span>
+                </div>
+            </a>
+        </a>
+        <br />
+        <a class="item" href="/">
+            <i class="home icon"></i>
+            Home
+        </a>
+        <a class="item" href="/activityselect/html">
+            <i class="html5 icon"></i>
+            HTML
+        </a>
+        <a class="item" href="/activityselect/css">
+            <i class="css3 icon"></i>
+            CSS
+        </a>
+        <a class="item" href="/activityselect/js">
+            <i class="js square icon"></i>
+            JS
+        </a>
+        <a class="item" href="/activityselect/mysql">
+            <i class="database icon"></i>
+            MySQL
+        </a>
+        <a class="item" href="/activityselect/python">
+            <i class="python icon bottom"></i>
+            Python
+        </a>
+    </div>
+
+    <!-- Sidebar for mobile screens -->
+    <div id="mobile-sidebar" class="ui left vertical inverted sidebar labeled icon menu mobile only">
+        <a class="item" href="/">
+            <i class="home icon"></i>
+            Home
+        </a>
+        <a class="item" href="/activityselect/html">
+            <i class="html5 icon"></i>
+            HTML
+        </a>
+        <a class="item" href="/activityselect/css">
+            <i class="css3 icon"></i>
+            CSS
+        </a>
+        <a class="item" href="/activityselect/js">
+            <i class="js square icon"></i>
+            JS
+        </a>
+        <a class="item" href="/activityselect/mysql">
+            <i class="database icon"></i>
+            MySQL
+        </a>
+        <a class="item" href="/activityselect/python">
+            <i class="python icon"></i>
+            Python
+        </a>
+    </div>
+
+    <!-- Page contents -->
+    <div class="pusher">
+        <div id="large-sidebar-trigger"
+            class="ui sidebar left vertical visible inverted labeled icon menu computer lrg screen widescreen only" style='background-color:rgba(255,113,77,1)'>
+            <a class="ui button icon sidebar-toggle-large" style='background-color:rgba(255,113,77,1)'>
+                <i class="sidebar icon"></i>
+            </a>
+        </div>
+        <a class="ui button black icon launch icon item sidebar-toggle-mobile tablet screen mobile only">
+            <i class="sidebar icon"></i>
+        </a>
+<div class="ui placeholder segment">
+  <div class="ui icon header">
+    <<i class="pdf file outline icon"></i>>
+    No documents are listed for this customer.
+  </div>
+  <div class="ui primary button">Add Document</div>
+</div>
+    </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    // $('#large-sidebar')
+    //     .sidebar('setting', 'transition', 'slide along').sidebar('toggle');
+    $('a.sidebar-toggle-large').click(function () {
+        $('#large-sidebar').sidebar('setting', 'transition', 'slide along').sidebar('toggle');
+    });
+    
+    $('a.sidebar-toggle-mobile').click(function () {
+        $('#mobile-sidebar').sidebar('toggle')
+    });
+
+    $("#webticker-update-example").webTicker({
+        height: '100%',
+        startEmpty: false
+    });
+</script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
