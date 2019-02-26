@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 class App extends Component {
   goTo(route) {
@@ -33,6 +34,7 @@ class App extends Component {
 
     return (
       <div>
+        <Sidebar />
         <Navbar fluid>
           <Navbar.Header>
             <Navbar.Brand>
