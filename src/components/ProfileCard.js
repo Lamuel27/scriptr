@@ -12,9 +12,9 @@ class ProfileCard extends Component {
                     <img src="https://semantic-ui.com/images/avatar2/large/kristy.png"></img>
                 </div>
                 <a className="content">
-                    <a className="header" href="/profile"><h3 style={{ "color": "white" }}>Helen</h3></a>
+                    <a className="header" href="/profile"><h3 style={{ "color": "black" }}>Helen</h3></a>
                     <div className="meta">
-                        <span style={{ "color": "white" }}>Super-Coder (Level 43)</span>
+                        <span style={{ "color": "black" }}>Super-Coder (Level 43)</span>
                     </div>
                 </a>
             </a>
