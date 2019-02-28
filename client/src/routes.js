@@ -1,8 +1,8 @@
 import React from 'react';
 import { Redirect, Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './Home/Home';
-import Profile from './Profile/Profile';
+import Home from './pages/Home/Home';
+import Profile from './pages/Profile/Profile';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';

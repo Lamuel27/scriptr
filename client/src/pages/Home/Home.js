@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
+import ProfileCard from '../../components/ProfileCard'
 
 class Home extends Component {
   render() {
     const { isAuthenticated, login, getExpiryDate } = this.props.auth;
     return (
       <div className="container">
-        {isAuthenticated() &&
-          <div>
-            <h4>You are logged in!</h4>
-            
-          </div>}
         {!isAuthenticated() &&
           <h4>
             You are not logged in! Please{' '}

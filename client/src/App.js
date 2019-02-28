@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
 import Sidebar from './components/Sidebar';
+import ProfileCard from './components/ProfileCard'
 
 class App extends Component {
   goTo(route) {
@@ -65,6 +66,8 @@ class App extends Component {
                 Profile
               </Button>}
             {isAuthenticated() &&
+              <ProfileCard />}
+            {isAuthenticated() &&
               // <Button
               //   bsStyle="primary"
               //   className="btn-margin"
@@ -72,7 +75,7 @@ class App extends Component {
               // >
               //   Renew Token
               // </Button>}
-            // {isAuthenticated() &&
+              // {isAuthenticated() &&
               <Button
                 id="qsLogoutBtn"
                 bsStyle="primary"
