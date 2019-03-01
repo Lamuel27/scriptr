@@ -7,27 +7,11 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.webticker/3.0.0/jquery.webticker.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <style>
-        /* .ui.main.grid {
-            left: 18.75%;
-            position: relative;
-            width: 81.25%;
-        } */
-
-
-        /*// Semantic UI has these classes, however they're only applicable to
-    // grids, containers, rows and columns.
-    // plus, there isn't any `mobile hidden`, `X hidden` class.
-    // this snippet is using the same class names and same approach
-    // plus a bit more but to all elements.
-    //
-    // see https://github.com/Semantic-Org/Semantic-UI/issues/1114*/
-
         /* Mobile */
         @media only screen and (max-width: 767px) {
 
@@ -126,6 +110,14 @@
 
 </html>
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
 <script>
     $('a.sidebar-toggle-large').click(function () {
         $('#large-sidebar').sidebar('setting', 'transition', 'slide along').sidebar('toggle');
@@ -133,11 +125,6 @@
 
     $('a.sidebar-toggle-mobile').click(function () {
         $('#mobile-sidebar').sidebar('toggle')
-    });
-
-    $("#webticker-update-example").webTicker({
-        height: '100%',
-        startEmpty: false
     });
 </script>
 </body>

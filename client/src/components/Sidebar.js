@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ProfileCard from "./ProfileCard";
 
 class Sidebar extends Component {
     constructor(props) {
@@ -10,7 +9,6 @@ class Sidebar extends Component {
         return (
             <div>
                 <div id="large-sidebar" className="ui left vertical inverted sidebar menu computer lrg screen widescreen only" style={{"backgroundColor": "rgba(255,93,72,.75)"}}>
-                    <ProfileCard />
                     <br />
                     <a className="item" href="/">
                         <i className="home icon"></i>

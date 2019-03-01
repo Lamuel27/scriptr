@@ -3,6 +3,7 @@ import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import ProfileCard from './components/ProfileCard'
+import ActivityCard from './components/ActivityCard'
 
 class App extends Component {
   goTo(route) {
@@ -66,7 +67,7 @@ class App extends Component {
                 Profile
               </Button>}
             {isAuthenticated() &&
-              <ProfileCard />}
+              <ProfileCard onClick={this.goTo.bind(this, 'profile')}/>}
             {isAuthenticated() &&
               // <Button
               //   bsStyle="primary"

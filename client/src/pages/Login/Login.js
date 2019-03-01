@@ -1,7 +1,7 @@
 
 import React, { Component } from "react"
 import { Navbar, Button } from 'react-bootstrap';
-import Auth from '../Auth/Auth.js';
+import Auth from '../../Auth/Auth.js';
 
 class Login extends Component {
     goTo(route) {
