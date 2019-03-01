@@ -6,11 +6,11 @@ class Quiz extends Component {
         return (
             <div>
                 <QuizQuestion
-                    question=""
-                    a=""
-                    b=""
-                    c=""
-                    d=""
+                    question="filler language filler language"
+                    a="sadfasdfasdf"
+                    b="asdfasdf"
+                    c="asdfasdf"
+                    d="asdfasdf"
                 />
             </div>
         )

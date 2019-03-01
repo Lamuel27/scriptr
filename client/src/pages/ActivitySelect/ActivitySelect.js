@@ -9,10 +9,12 @@ class ActivitySelect extends Component {
     render() {
         return (
             <div>
-                <ActivityCard icon="clone outline icon">Flash Cards</ActivityCard>
-                <ActivityCard icon="edit outline icon">Quiz</ActivityCard>
-                <ActivityCard icon="code icon">Code Fix</ActivityCard>
+                <ActivityCard href="/profile" icon="clone outline icon">Flash Cards</ActivityCard>
+                <ActivityCard href="/quiz" icon="edit outline icon">Quiz</ActivityCard>
+                <ActivityCard href="/fiddle" icon="code icon">Code Fix</ActivityCard>
             </div>
         )
     }
 }
+
+export default ActivitySelect;

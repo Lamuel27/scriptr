@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
 import Quiz from './pages/Quiz/Quiz';
 import JsFiddle from './pages/JsFiddle/JsFiddle';
+import ActivitySelect from './pages/ActivitySelect/ActivitySelect';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
@@ -29,6 +30,13 @@ export const makeMainRoutes = () => {
             !auth.isAuthenticated()
               ? <Redirect to="/home" />
               : <Profile auth={auth} {...props} />}
+        />
+        <Route
+          path="/activities"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <ActivitySelect auth={auth} {...props} />}
         />
         <Route
           path="/quiz"

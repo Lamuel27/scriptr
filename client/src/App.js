@@ -20,6 +20,7 @@ class App extends Component {
 
   logout() {
     this.props.auth.logout();
+    alert("You have been logged out of scriptr.  Come back soon!")
   }
 
   renewToken() {
@@ -74,6 +75,14 @@ class App extends Component {
               <Button
                 bsStyle="primary"
                 className="btn-margin"
+                onClick={this.goTo.bind(this, 'activities')}
+              >
+                Activities
+              </Button>}
+            {isAuthenticated() &&
+              <Button
+                bsStyle="primary"
+                className="btn-margin"
                 onClick={this.goTo.bind(this, 'quiz')}
               >
                 Quiz
@@ -86,23 +95,24 @@ class App extends Component {
               >
                 Fiddle
            </Button>}
+           
             {isAuthenticated() &&
               <ProfileCard onClick={this.goTo.bind(this, 'profile')} />}
-            {isAuthenticated() &&
-              // <Button
-              //   bsStyle="primary"
-              //   className="btn-margin"
-              //   onClick={this.renewToken.bind(this)}
-              // >
-              //   Renew Token
-              // </Button>}
-              // {isAuthenticated() &&
+            {/* {isAuthenticated() &&
+              <Button
+                bsStyle="primary"
+                className="btn-margin"
+                onClick={this.renewToken.bind(this)}
+              >
+                Renew Token
+              </Button>} */}
+              {isAuthenticated() &&
               <Button
                 id="qsLogoutBtn"
                 bsStyle="primary"
                 className="btn-margin"
                 onClick={this.logout.bind(this)}
-              >
+                >
                 Log Out
               </Button>}
           </Navbar.Header>
