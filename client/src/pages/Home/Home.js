@@ -6,6 +6,7 @@ class Home extends Component {
     const { isAuthenticated, login, getExpiryDate } = this.props.auth;
     return (
         <Jumbotron />
+        
     );
   }
 }
