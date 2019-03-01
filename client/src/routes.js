@@ -3,6 +3,8 @@ import { Redirect, Route, Router } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
+import Quiz from './pages/Quiz/Quiz';
+import JsFiddle from './pages/JsFiddle/JsFiddle';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
@@ -27,6 +29,20 @@ export const makeMainRoutes = () => {
             !auth.isAuthenticated()
               ? <Redirect to="/home" />
               : <Profile auth={auth} {...props} />}
+        />
+        <Route
+          path="/quiz"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <Quiz auth={auth} {...props} />}
+        />
+        <Route
+          path="/fiddle"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <JsFiddle auth={auth} {...props} />}
         />
         <Route
           path="/callback"

@@ -4,6 +4,10 @@ import './App.css';
 import Sidebar from './components/Sidebar';
 import ProfileCard from './components/ProfileCard'
 import ActivityCard from './components/ActivityCard'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ActivitySelect from "./pages/ActivitySelect/ActivitySelect";
+
+
 
 class App extends Component {
   goTo(route) {
@@ -67,7 +71,23 @@ class App extends Component {
                 Profile
               </Button>}
             {isAuthenticated() &&
-              <ProfileCard onClick={this.goTo.bind(this, 'profile')}/>}
+              <Button
+                bsStyle="primary"
+                className="btn-margin"
+                onClick={this.goTo.bind(this, 'quiz')}
+              >
+                Quiz
+          </Button>}
+            {isAuthenticated() &&
+              <Button
+                bsStyle="primary"
+                className="btn-margin"
+                onClick={this.goTo.bind(this, 'fiddle')}
+              >
+                Fiddle
+           </Button>}
+            {isAuthenticated() &&
+              <ProfileCard onClick={this.goTo.bind(this, 'profile')} />}
             {isAuthenticated() &&
               // <Button
               //   bsStyle="primary"
