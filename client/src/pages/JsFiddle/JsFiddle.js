@@ -4,7 +4,9 @@ import Fiddle from '../../components/CodeFix'
 class JsFiddle extends Component {
   render() {
     return (
+      <div><h2 style = {{ "textAlign":"center" }}>Manipulate the code below and see how the elements change!</h2>
         <Fiddle />
+        </div>
     );
   }
 }
