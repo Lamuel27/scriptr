@@ -16,7 +16,7 @@ class Sidebar extends Component {
                     {!isAuthenticated() && 
                     <Link onClick={login.bind(this)}
                     to="/home" className="item">
-                        <i className="user circle icon"></i>
+                        <i className="sign-in circle icon"></i>
                         Login
                     </Link>}
                     <Link to="/home" className="item">
@@ -65,7 +65,7 @@ class Sidebar extends Component {
                     </a> */}
                     {isAuthenticated() &&
                     <Link onClick={logout.bind(this)}to="/" className="item">
-                        <i className="keyboard icon"></i>
+                        <i className="sign-out icon"></i>
                         Logout
                     </Link>}
                 </div>
