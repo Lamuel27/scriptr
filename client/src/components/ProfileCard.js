@@ -32,9 +32,9 @@ class ProfileCard extends Component {
                 href="/profile"
                 style={{
                     "position": "fixed",
-                    "right": "50px",
-                    "top": "50px",
-                    "width": "150px",
+                    "right": "25px",
+                    "top": "25px",
+                    "width": "125px",
                     "zIndex": "10",
                     "boxShadow": "0px 5px 20px rgba(0,0,0,.5)",
                     "textAlign": "center"
