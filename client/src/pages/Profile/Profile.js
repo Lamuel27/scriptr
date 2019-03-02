@@ -15,6 +15,8 @@ class Profile extends Component {
     }
   }
   render() {
+    console.log(this.props.auth)
+
     const { profile } = this.state;
     return (
       <div className="container">

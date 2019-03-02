@@ -35,26 +35,27 @@ class App extends Component {
       renewSession();
     }
   }
-
+  
   render() {
-    const { isAuthenticated } = this.props.auth;
-
+    const { isAuthenticated, userProfile, getProfile } = this.props.auth;
     return (
       <div>
-        <Sidebar />
-        <Navbar fluid>
-          <Navbar.Header>
-            <Navbar.Brand>
+        <Sidebar name = {this.props}/>
+        {/* <Navbar fluid>
+          <Navbar.Header> */}
+            {/* <Navbar.Brand>
               <a onClick={this.goTo.bind(this, 'home')}>Welcome to scriptr!</a>
-            </Navbar.Brand>
-            <Button
+            </Navbar.Brand> */}
+ 
+
+            {/* <Button
               bsStyle="primary"
               className="btn-margin"
               onClick={this.goTo.bind(this, 'home')}
             >
               Home
-            </Button>
-            {!isAuthenticated() &&
+            </Button> */}
+            {/* {!isAuthenticated() &&
               <Button
                 id="qsLoginBtn"
                 bsStyle="primary"
@@ -62,42 +63,43 @@ class App extends Component {
                 onClick={this.login.bind(this)}
               >
                 Log In
-              </Button>}
-            {isAuthenticated() &&
+              </Button>} */}
+            {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
                 onClick={this.goTo.bind(this, 'profile')}
               >
                 Profile
-              </Button>}
-            {isAuthenticated() &&
+              </Button>} */}
+            {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
                 onClick={this.goTo.bind(this, 'activities')}
               >
                 Activities
-              </Button>}
-            {isAuthenticated() &&
+              </Button>} */}
+            {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
                 onClick={this.goTo.bind(this, 'quiz')}
               >
                 Quiz
-          </Button>}
-            {isAuthenticated() &&
+          </Button>} */}
+            {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
                 onClick={this.goTo.bind(this, 'fiddle')}
               >
                 Fiddle
-           </Button>}
+           </Button>} */}
            
             {isAuthenticated() &&
-              <ProfileCard onClick={this.goTo.bind(this, 'profile')} />}
+              <ProfileCard name = {this.props} onClick={this.goTo.bind(this, 'profile')} />}
+
             {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
@@ -106,7 +108,7 @@ class App extends Component {
               >
                 Renew Token
               </Button>} */}
-              {isAuthenticated() &&
+              {/* {isAuthenticated() &&
               <Button
                 id="qsLogoutBtn"
                 bsStyle="primary"
@@ -116,7 +118,7 @@ class App extends Component {
                 Log Out
               </Button>}
           </Navbar.Header>
-        </Navbar>
+        </Navbar> */}
       </div>
     );
   }
