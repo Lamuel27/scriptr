@@ -1,36 +1,46 @@
 import React from "react";
 
 function QuizQuestion(props) {
+    const style = {
+        buttonStyle: {
+            "display": "block"
+        },
+        questionStyle: {
+            "fontSize":"24px"
+        },
+        body: {
+            "overflow":"scroll"
+        }
+    }
+
+    function evaluate() {
+        // Put logic here for evaluating answer
+    }
+
     return (
         <div className="ui form">
-            <div className="inline fields">
+            <div className="question" style={style.questionStyle}>
                 <label>{props.question}</label>
-                <div className="field">
-                    <div className="ui radio checkbox">
-                        <input type="radio"></input>
-                        <label>{props.a}</label>
-                    </div>
-                </div>
-                <div className="field">
-                    <div className="ui radio checkbox">
-                        <input type="radio"></input>
-                        <label>{props.b}</label>
-                    </div>
-                </div>
-                <div className="field">
-                    <div className="ui radio checkbox">
-                        <input type="radio"></input>
-                        <label>{props.c}</label>
-                    </div>
-                </div>
-                <div className="field">
-                    <div className="ui radio checkbox">
-                        <input type="radio"></input>
-                        <label>{props.d}</label>
-                    </div>
-                </div>
+                <button className="ui button" style={style.buttonStyle}>
+                    {props.a}
+                </button>
+                <br></br>
+                <button className="ui button" style={style.buttonStyle}>
+                    {props.b}
+                </button>
+                <br></br>
+                <button className="ui button" style={style.buttonStyle}>
+                    {props.c}
+                </button>
+                <br></br>
+                <button className="ui button" style={style.buttonStyle}>
+                    {props.d}
+                </button>
             </div>
+            <br></br>
+            <br></br>
         </div>
+
     )
 }
 
