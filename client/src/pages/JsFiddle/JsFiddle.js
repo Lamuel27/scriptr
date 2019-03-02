@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fiddle from '../../components/CodeFix'
+import './JsFiddle.css';
 
 class JsFiddle extends Component {
   render() {

@@ -43,7 +43,7 @@ class Sidebar extends Component {
                         <i className="keyboard icon"></i>
                         Fiddle
                     </Link>}
-                    <a className="item" href="/activityselect/html">
+                    {/* <a className="item" href="/activityselect/html">
                         <i className="html5 icon"></i>
                         HTML
                     </a>
@@ -62,7 +62,7 @@ class Sidebar extends Component {
                     <a className="item" href="/activityselect/python">
                         <i className="python icon bottom"></i>
                         Python
-                    </a>
+                    </a> */}
                     {isAuthenticated() &&
                     <Link onClick={logout.bind(this)}to="/" className="item">
                         <i className="keyboard icon"></i>

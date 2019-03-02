@@ -5,7 +5,6 @@ import Sidebar from './components/Sidebar';
 import ProfileCard from './components/ProfileCard'
 import ActivityCard from './components/ActivityCard'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ActivitySelect from "./pages/ActivitySelect/ActivitySelect";
 
 
 
@@ -97,9 +96,10 @@ class App extends Component {
                 Fiddle
            </Button>} */}
            
-            {isAuthenticated() &&
+            {isAuthenticated() && this.props.location.pathname !== "/fiddle" &&
               <ProfileCard name = {this.props} onClick={this.goTo.bind(this, 'profile')} />}
 
+            
             {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
