@@ -96,7 +96,7 @@ class App extends Component {
                 Fiddle
            </Button>} */}
            
-            {isAuthenticated() && this.props.location.pathname !== "/fiddle" &&
+            {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
               <ProfileCard name = {this.props} onClick={this.goTo.bind(this, 'profile')} />}
 
             
