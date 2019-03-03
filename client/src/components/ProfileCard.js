@@ -1,13 +1,36 @@
 import React, { Component } from "react";
 import '../Auth/Auth';
-import {Router, Route, Link, RouteHandler} from 'react-router-dom';
+import { Router, Route, Link, RouteHandler } from 'react-router-dom';
 
 
 
 class ProfileCard extends Component {
-    constructor(props) {
-        super(props)
+
+    style = {
+        cardBackground: {
+            "backgroundColor": "white",
+            "width": "100px",
+            "position": "fixed",
+            "top": "25px",
+            "right": "25px",
+            "zIndex": "10",
+            "boxShadow": "0px 5px 20px rgba(0,0,0,.5)",
+            "textAlign": "center",
+            "borderRadius": "5px"
+        },
+        cardImage: {
+            "width": "100%",
+            "padding": "10px"
+        },
+        cardTitle: {
+            "fontWeight": "semibold"
+        },
+        cardSubtitle: {
+            "fontSize": "small",
+            "fontWeight":"lighter"
+        }
     }
+
     componentWillMount() {
         this.setState({ profile: {} });
         const { userProfile, getProfile } = this.props.name.auth;
@@ -27,26 +50,16 @@ class ProfileCard extends Component {
         const { profile } = this.state;
 
         return (
-            <div
-                className="ui card"
-                href="/profile"
-                style={{
-                    "position": "fixed",
-                    "right": "25px",
-                    "top": "25px",
-                    "width": "125px",
-                    "zIndex": "10",
-                    "boxShadow": "0px 5px 20px rgba(0,0,0,.5)",
-                    "textAlign": "center"
-                }}>
-                <div className="image">
-                    <img src={profile.picture}></img>
+            <div class="card" style={this.style.cardBackground}>
+                <Link to='/profile' className="header" href="/profile"><div class="card-image">
+                    <img style={this.style.cardImage} src={profile.picture} alt="Profile Pic"></img>
+                    <span class="card-title" style={this.style.cardTitle}>{profile.nickname}</span>
                 </div>
-                <div className="content">
-                    <Link to = '/profile' className="header" href="/profile"><h4 style={{ "color": "black" }}>{profile.nickname}</h4></Link>
-                    <div className="meta">
-                        <span style={{ "color": "black" }}>Super-Coder (Level 43)</span>
-                    </div>
+                <div class="card-content">
+                    <p style={this.style.cardSubtitle}>Super-Coder (Level 43)</p>
+                </div></Link>
+                <div class="card-action">
+                    <Link to='/profile' className="header" href="/profile">Profile</Link>
                 </div>
             </div>
         )

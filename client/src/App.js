@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
-import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 import ProfileCard from './components/ProfileCard'
-import ActivityCard from './components/ActivityCard'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-
 
 class App extends Component {
+
+  style = {
+    pusher: {
+      "height": "75px"
+    }
+  }
+
   goTo(route) {
     this.props.history.replace(`/${route}`);
   }
@@ -34,27 +36,29 @@ class App extends Component {
       renewSession();
     }
   }
-  
+
   render() {
     const { isAuthenticated, userProfile, getProfile } = this.props.auth;
     return (
       <div>
-        <Sidebar name = {this.props}/>
+        <Navbar name={this.props} />
+        <div style={this.style.pusher}></div>
+
         {/* <Navbar fluid>
           <Navbar.Header> */}
-            {/* <Navbar.Brand>
+        {/* <Navbar.Brand>
               <a onClick={this.goTo.bind(this, 'home')}>Welcome to scriptr!</a>
             </Navbar.Brand> */}
- 
 
-            {/* <Button
+
+        {/* <Button
               bsStyle="primary"
               className="btn-margin"
               onClick={this.goTo.bind(this, 'home')}
             >
               Home
             </Button> */}
-            {/* {!isAuthenticated() &&
+        {/* {!isAuthenticated() &&
               <Button
                 id="qsLoginBtn"
                 bsStyle="primary"
@@ -63,7 +67,7 @@ class App extends Component {
               >
                 Log In
               </Button>} */}
-            {/* {isAuthenticated() &&
+        {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
@@ -71,7 +75,7 @@ class App extends Component {
               >
                 Profile
               </Button>} */}
-            {/* {isAuthenticated() &&
+        {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
@@ -79,7 +83,7 @@ class App extends Component {
               >
                 Activities
               </Button>} */}
-            {/* {isAuthenticated() &&
+        {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
@@ -87,7 +91,7 @@ class App extends Component {
               >
                 Quiz
           </Button>} */}
-            {/* {isAuthenticated() &&
+        {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
@@ -95,12 +99,12 @@ class App extends Component {
               >
                 Fiddle
            </Button>} */}
-           
-            {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
-              <ProfileCard name = {this.props} onClick={this.goTo.bind(this, 'profile')} />}
 
-            
-            {/* {isAuthenticated() &&
+        {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
+          <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
+
+
+        {/* {isAuthenticated() &&
               <Button
                 bsStyle="primary"
                 className="btn-margin"
@@ -108,7 +112,7 @@ class App extends Component {
               >
                 Renew Token
               </Button>} */}
-              {/* {isAuthenticated() &&
+        {/* {isAuthenticated() &&
               <Button
                 id="qsLogoutBtn"
                 bsStyle="primary"
