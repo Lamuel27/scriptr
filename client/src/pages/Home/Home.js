@@ -10,9 +10,9 @@ class Home extends Component {
     return (
       <div>
         <Jumbotron />
-        <h2 style = {{ "textAlign":"center" }}>Other great learning resources:</h2>
+        <h2 style={{ "textAlign": "center" }}>Other great learning resources:</h2>
         <Companies />
-        </div>
+      </div>
     );
   }
 }

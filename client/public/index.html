@@ -7,121 +7,27 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <style>
-        /* Mobile */
-        @media only screen and (max-width: 767px) {
-
-            [class*="mobile hidden"],
-            [class*="tablet only"]:not(.mobile),
-            [class*="computer only"]:not(.mobile),
-            [class*="lrg screen only"]:not(.mobile),
-            [class*="widescreen only"]:not(.mobile),
-            [class*="or lower hidden"] {
-                display: none !important;
-            }
-        }
-
-        /* Tablet / iPad Portrait */
-        @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-            [class*="mobile only"]:not(.tablet),
-            [class*="tablet hidden"],
-            [class*="computer only"]:not(.tablet),
-            [class*="lrg screen only"]:not(.tablet),
-            [class*="widescreen only"]:not(.tablet),
-            [class*="or lower hidden"]:not(.mobile) {
-                display: none !important;
-            }
-        }
-
-        /* Computer / Desktop / iPad Landscape */
-        @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-            [class*="mobile only"]:not(.computer),
-            [class*="tablet only"]:not(.computer),
-            [class*="computer hidden"],
-            [class*="lrg screen only"]:not(.computer),
-            [class*="widescreen only"]:not(.computer),
-            [class*="or lower hidden"]:not(.tablet):not(.mobile) {
-                display: none !important;
-            }
-        }
-
-        /* lrg Monitor */
-        @media only screen and (min-width: 1200px) and (max-width: 1919px) {
-
-            [class*="mobile only"]:not([class*="lrg screen"]),
-            [class*="tablet only"]:not([class*="lrg screen"]),
-            [class*="computer only"]:not([class*="lrg screen"]),
-            [class*="lrg screen hidden"],
-            [class*="widescreen only"]:not([class*="lrg screen"]),
-            [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
-                display: none !important;
-            }
-        }
-
-        /* Widescreen Monitor */
-        @media only screen and (min-width: 1920px) {
-
-            [class*="mobile only"]:not([class*="widescreen"]),
-            [class*="tablet only"]:not([class*="widescreen"]),
-            [class*="computer only"]:not([class*="widescreen"]),
-            [class*="lrg screen only"]:not([class*="widescreen"]),
-            [class*="widescreen hidden"],
-            [class*="widescreen or lower hidden"] {
-                display: none !important;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="materialize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 </head>
 
 <body>
-    <div style='background-color:darkgray;width:100%;height:100%;position:relative;top:0px;left:30px' scrolling="yes">
-        <div id="root"></div>
-        <!-- <img src="../assets/images/scriptrlogo.png"> -->
-
-        <!-- Page contents -->
-        <div class="pusher">
-            <div id="large-sidebar-trigger"
-                class="ui sidebar left vertical visible inverted labeled icon menu computer lrg screen widescreen only"
-                style='background-color:rgba(255,113,77,1)'>
-                <a class="ui button icon sidebar-toggle-large" style='background-color:rgba(255,113,77,1)'>
-                    <i class="sidebar icon"></i>
-                </a>
-            </div>
-            <a class="ui button black icon launch icon item sidebar-toggle-mobile tablet screen mobile only">
-                <i class="sidebar icon"></i>
-            </a>
-
-    </div>
+    <div id="root"></div>
 </body>
-
 </html>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="materialize.min.js"></script>
 
 <script>
-    $('a.sidebar-toggle-large').click(function () {
-        $('#large-sidebar').sidebar('setting', 'transition', 'slide along').sidebar('toggle');
+    $(document).ready(function () {
+        $('.fixed-action-btn').floatingActionButton();
     });
-
-    $('a.sidebar-toggle-mobile').click(function () {
-        $('#mobile-sidebar').sidebar('toggle')
-    });
-
-    $('.ui.radio.checkbox')
-  .checkbox()
-;
 </script>
 </body>
 

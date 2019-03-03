@@ -6,7 +6,7 @@ function QuizQuestion(props) {
             "display": "block"
         },
         questionStyle: {
-            "fontSize":"24px"
+            "fontSize":"large"
         },
         body: {
             "overflow":"scroll"
@@ -19,21 +19,21 @@ function QuizQuestion(props) {
 
     return (
         <div className="ui form">
-            <div className="question" style={style.questionStyle}>
-                <label>{props.question}</label>
-                <button className="ui button" style={style.buttonStyle}>
+            <div className="question">
+                <label style={style.questionStyle}>{props.question}</label>
+                <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.a}
                 </button>
-                <br></br>
-                <button className="ui button" style={style.buttonStyle}>
+                
+                <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.b}
                 </button>
-                <br></br>
-                <button className="ui button" style={style.buttonStyle}>
+                
+                <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.c}
                 </button>
-                <br></br>
-                <button className="ui button" style={style.buttonStyle}>
+                
+                <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.d}
                 </button>
             </div>
