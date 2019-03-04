@@ -6,7 +6,7 @@ class Companies extends Component {
     }
     render() {
         return (
-            <div>
+            <div style = {{ "backgroundColor":"RGBA(255,255,255,.5"}}>
             <a href ="https://www.pluralsight.com" target="_blank">
             <img src = "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/PS_logo_F-04.png"></img>
             </a>
