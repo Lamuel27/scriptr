@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import ProfileCard from './components/ProfileCard'
+import ProfileCard from './components/ProfileCard';
 
 class App extends Component {
 
