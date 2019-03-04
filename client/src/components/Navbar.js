@@ -59,7 +59,7 @@ class Navbar extends Component {
 
         return (
             <div className="fixed-action-btn direction-right" style={this.style.floatNav}>
-                <img src="./images/scriptrlogo.png" className="btn-floating" style={this.style.navLogo} alt="logo"></img>
+                <img src="./images/scriptrlogohollow.png" className="btn-floating" style={this.style.navLogo} alt="logo"></img>
 
                 {!isAuthenticated() &&
                     <ul style={this.style.navList}>
