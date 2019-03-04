@@ -5,7 +5,7 @@ import "./Quiz.css";
 class Quiz extends Component {
     render() {
         return (
-            <div>
+            <div className = "container">
                 <QuizQuestion
                     question="What does HTML stand for?"
                     a="How The Man Landed"

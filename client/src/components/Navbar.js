@@ -52,6 +52,7 @@ class Navbar extends Component {
                     <ul>
                         <li style={this.style.navButton}><Link to="/home" className="btn-floating" style={this.style.navFont}>Home</Link></li>
                         <li style={this.style.navButton}><Link to="/profile" className="btn-floating" style={this.style.navFont}>Profile</Link></li>
+                        <li style={this.style.navButton}><Link to="/flash" className="btn-floating" style={this.style.navFont}>Flash Cards</Link></li>
                         <li style={this.style.navButton}><Link to="/quiz" className="btn-floating" style={this.style.navFont}>Quiz</Link></li>
                         <li style={this.style.navButton}><Link to="/fiddle" className="btn-floating" style={this.style.navFont}>Fiddle</Link></li>
                         <li style={this.style.navButton}><Link onClick={logout.bind(this)} to="/" className="btn-floating" style={this.style.navFont}>Logout</Link></li>
