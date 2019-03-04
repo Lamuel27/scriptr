@@ -10,6 +10,9 @@ function QuizQuestion(props) {
         },
         body: {
             "overflow":"scroll"
+        },
+        button: {
+            "alignContent":"center"
         }
     }
 
