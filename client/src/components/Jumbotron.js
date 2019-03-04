@@ -7,7 +7,7 @@ class Jumbotron extends Component {
     render() {
         return (
             <div className="container" style={{"textAlign":"center"}}>
-            <div className="jumbotron" style = {{ "backgroundColor":"darkgrey" }}>
+            <div className="jumbotron" style = {{ "backgroundColor":"transparent","color":"white" }}>
                 <h1 className="display-4">scriptr</h1>
                 <p className="lead">Quizzes. Flashcards. Interactive Problems.</p>
                 <hr className="my-4"></hr>
