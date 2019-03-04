@@ -7,7 +7,8 @@ class App extends Component {
 
   style = {
     pusher: {
-      "height": "75px"
+      "height": "75px",
+      "color":"white"
     }
   }
 
