@@ -534,6 +534,248 @@ const quizSeed = [
         ],
         "correctIndex": 3
     },
+    {
+        "category": "JS",
+        "question": "Variables that we can refer to everywhere are known as ____ variables.",
+        "answers": [
+            "global",
+            "permanent",
+            "eternal",
+            "primary"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "What is another JavaScript method that is used to loop over arrays or Objects?",
+        "answers": [
+            "loopOver",
+            "readAll",
+            "$.each",
+            "forEach"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "JS",
+        "question": "Effectively, the ____ is the version of HTML / CSS interpreted by the browser.",
+        "answers": [
+            "DOM",
+            "program",
+            "debugger",
+            "console"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "Without using jQuery, HTML elements on a page can be populated using the ____ property.",
+        "answers": [
+            ".text()",
+            "innerHTML",
+            "div",
+            "script"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "JS",
+        "question": "Without using jQuery, we can code a new div with the following:",
+        "answers": [
+            "createElement('div')",
+            "$('&lt;div&gt;')",
+            "makeDivElement()",
+            "createNew('div')"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "Once a new div has been coded, it can be attached to an element on the page with the ____ JavaScript method.",
+        "answers": [
+            "placeDiv",
+            "appendChild",
+            "createPosition",
+            "setElement"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "JS",
+        "question": "Without using jQuery, a CSS style of an element can be manipulated using the ____ method.",
+        "answers": [
+            "adjustCSS",
+            ".css()",
+            "setAttribute",
+            "setStyle"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "JS",
+        "question": "Without using jQuery, a CSS style of an element can be manipulated using the ____ method.",
+        "answers": [
+            "adjustCSS",
+            ".css()",
+            "setAttribute",
+            "setStyle"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "JS",
+        "question": "jQuery is a cross-platform JavaScript ____ for easier client-side scripting.",
+        "answers": [
+            "command",
+            "template",
+            "table",
+            "library"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "JS",
+        "question": "jQuery can be useful for tasks such as:",
+        "answers": [
+            "Dynamically inserting, updating, or removing HTML",
+            "Registering click or other change events",
+            "Downloading data from databases",
+            "All of the above"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "JS",
+        "question": "A div with the id of myDiv can be targeted using jQuery by typing:",
+        "answers": [
+            "$('#myDiv')",
+            "$(.myDiv)",
+            "$('myDiv')",
+            "$div"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "A new button can be created using jQuery and assigned to a variable using the following code:",
+        "answers": [
+            "var newButton = $newButton;",
+            "var newButton = $('<button>');",
+            "var newButton = create.button;",
+            "var newButton = button('new')"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "JS",
+        "question": "A new button can be created using jQuery and assigned to a variable using the following code:",
+        "answers": [
+            ".loop",
+            ".iterate",
+            ".every",
+            ".each"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "JS",
+        "question": "____ makes sure that our JavaScript code doesn't get run until the HTML document is finished loading.",
+        "answers": [
+            "document.ready",
+            "page.loaded",
+            "document.complete",
+            "process.ended"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "We can use jQuery to create a listener that listens for a click on all elements with the class myClass using:",
+        "answers": [
+            "$('.myClass').on('click', function() { ... });",
+            "$('.myClass').on(function() { ... });",
+            "$'.myClass').on('press', function() { ... });",
+            "$('.myClass').on(clickMe!, function() { ... });"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "To attach an element to the beginning of another element, we can use the ____ jQuery method.",
+        "answers": [
+            ".append",
+            ".attach",
+            ".start",
+            ".prepend"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "JS",
+        "question": "Writing ____ is equivalent to writing $() when using the jQuery library.",
+        "answers": [
+            "jQuery()",
+            "select()",
+            "click()",
+            "library()"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "The _____ jQuery method can be used to place attributes on HTML elements",
+        "answers": [
+            ".attribute",
+            ".append",
+            ".attr",
+            ".info"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "JS",
+        "question": "We can give classes to elements using the ____ jQuery method.",
+        "answers": [
+            ".addClass",
+            ".giveClass",
+            ".setClass",
+            ".attrClass"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "A button with an id of myButton can be set to have its displayed name show as 'SuperButton' with the following jQuery code:",
+        "answers": [
+            "$('#myButton').name('SuperButton');",
+            "$('#myButton').text('SuperButton');",
+            "$('#myButton').set('SuperButton');",
+            "$#myButton('SuperButton');"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "JS",
+        "question": "In JavaScript, ____ functions can access ____ variables, but not vice versa.",
+        "answers": [
+            "parent, child",
+            "all, child",
+            "parent, all",
+            "child, parent"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "JS",
+        "question": "In JavaScript, ____ functions can access ____ variables, but not vice versa.",
+        "answers": [
+            "parent, child",
+            "all, child",
+            "parent, all",
+            "child, parent"
+        ],
+        "correctIndex": 4
+    },
     
 
 ];
