@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fiddle from '../../components/CodeFix'
+import Fiddle from '../../components/Fiddle'
 import './JsFiddle.css';
 
 class JsFiddle extends Component {
