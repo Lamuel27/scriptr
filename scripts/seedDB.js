@@ -766,15 +766,532 @@ const quizSeed = [
         "correctIndex": 4
     },
     {
-        "category": "JS",
-        "question": "In JavaScript, ____ functions can access ____ variables, but not vice versa.",
+        "category": "SQL",
+        "question": "What does SQL stand for?",
         "answers": [
-            "parent, child",
-            "all, child",
-            "parent, all",
-            "child, parent"
+            "Stored Query List",
+            "Structured Query Language",
+            "Strict Qualified Language",
+            "Stripe Quality Lambda"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "MySQL is to ___, as MySQL Workbench and Sequel Pro are to ___.",
+        "answers": [
+            "server, client",
+            "Node, JavaScript",
+            "JavaScript, SQL",
+            "Windows, Mac"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "SQL",
+        "question": "A new database called friends_db can be created using the following SQL code:",
+        "answers": [
+            "MAKE DATABASE NEW friends_db;",
+            "START friends_db DATABASE;",
+            "CREATE DATABASE friends_db;",
+            "INIT friends_db DATABASE;"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "Databases store data in one or more ___ comprised of multiple ___.",
+        "answers": [
+            "arrays, variables",
+            "variables, strings",
+            "tables, columns",
+            "containers, rows"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "The SQL ___ statement is used to select a database and perform SQL operations into that database.",
+        "answers": [
+            "SELECT",
+            "CREATE",
+            "JOIN",
+            "USE"
         ],
         "correctIndex": 4
+    },
+    {
+        "category": "SQL",
+        "question": "The correct syntax for making a new table called toys is ___.",
+        "answers": [
+            "CREATE TABLE toys ();",
+            "MAKE TABLE NEW toys ();",
+            "START toys TABLE ();",
+            "INIT toys TABLE ();"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "SQL",
+        "question": "Columns can be prevented from having empty fields for any record by defining them with the ___ constraint.",
+        "answers": [
+            "REQUIRE DATA",
+            "NOT NULL",
+            "PREVENT EMPTY",
+            "MUST VARCHAR"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "The ___ data type can be used to specify that a column may only hold strings of variable lengths.",
+        "answers": [
+            "STRING",
+            "BLOB",
+            "CHAR",
+            "VARCHAR"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "SQL",
+        "question": "The ___ constraint is used to add a specific value to a column when no other value has been specified.",
+        "answers": [
+            "DEFAULT",
+            "SELECTED",
+            "USE",
+            "VALUE"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "SQL",
+        "question": "The ___ data type can be used to specify that a column may only hold whole numbers.",
+        "answers": [
+            "NUMBER",
+            "INTEGER",
+            "VARCHAR",
+            "BLOB"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "Data may be added to a specified table by using the ___ statement.",
+        "answers": [
+            "ADD DATA",
+            "INSERT IN",
+            "INSERT INTO",
+            "ADD INTO"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "The specific data being added to a table is preceded by the ___ keyword.",
+        "answers": [
+            "DATA",
+            "VARIABLES",
+            "VALUES",
+            "VARCHAR"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "An SQL statement is executed that successfully adds a new record of a person's name and age to a table. What is the result of executing the exact same SQL statement a second time?",
+        "answers": [
+            "A new identical record will be created",
+            "The original record will be overwritten",
+            "This will cause a database error",
+            "The second time code execution will be ignored"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "SQL",
+        "question": "Existing records in a table can be modified with the ___ statement.",
+        "answers": [
+            "MODIFY",
+            "UPDATE",
+            "REDO",
+            "RESET"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "When modifying existing table data, the ___ keyword is used to specify the column(s) and new value(s).",
+        "answers": [
+            "SET",
+            "WHERE",
+            "FIELD",
+            "LOCATION"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "SQL",
+        "question": "When modifying data in a table, failure to use the WHERE statement will ___.",
+        "answers": [
+            "stop the code from executing",
+            "drop the database connection",
+            "modify all the records",
+            "prevent location services"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "Data may be removed from a specified table by using the ___ statement.",
+        "answers": [
+            "REMOVE DATA",
+            "DELETE RECORD",
+            "DELETE FROM",
+            "REMOVE FROM"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "The ___ statement is used to group together elements with shared values.",
+        "answers": [
+            "SHARE FROM",
+            "GROUP BY",
+            "COMMON VALUE",
+            "COMBINE INTO"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "The ___ operator can be used to select values within a range.",
+        "answers": [
+            "RANGE",
+            "VALUES",
+            "MINMAX",
+            "BETWEEN"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "SQL",
+        "question": "Each record in a table is uniquely identified by a ___ key.",
+        "answers": [
+            "primary",
+            "unique",
+            "singular",
+            "master"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "SQL",
+        "question": "___ generates a new value for each inserted record in a table, increasing it by 1 each time by default.",
+        "answers": [
+            "UPDATE_ID",
+            "AUTO_INCREMENT",
+            "ADD_INTEGER",
+            "DEFAULT_ADD"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "___ can be utilized to combine two or more individual tables together using a value that is shared between them.",
+        "answers": [
+            "Inners",
+            "Outers",
+            "Joins",
+            "Combines"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "The MySQL NPM package's createConnection method requires:",
+        "answers": [
+            "host name",
+            "user name and password",
+            "database name",
+            "all of the above"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "SQL",
+        "question": "A database must first be ___ before attempting to connect to it with Node.",
+        "answers": [
+            "emptied",
+            "populated",
+            "deleted",
+            "created"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "SQL",
+        "question": "Data returned from the database to a Node query is in the form of ___.",
+        "answers": [
+            "a single object",
+            "an array of objects",
+            "an array of arrays",
+            "a single array"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "SQL",
+        "question": "Programmers use CRUD methodology which stands for ___.",
+        "answers": [
+            "CREATE READ UNDERSTAND DEFEAT",
+            "COMMON RECURSIVE UNIVERSAL DATA",
+            "CREATE READ UPDATE DELETE",
+            "COMMON RECURSIVE ULTERIOR DESIGN"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "SQL",
+        "question": "MySQL developers use ___ files to save their database and table creation code, and ___ files to save the statements they use to insert data into their tables.",
+        "answers": [
+            "data.sql, database.sql",
+            "seeds.sql, schema.sql",
+            "database.sql, data.sql",
+            "schema.sql, seeds.sql"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "SQL",
+        "question": "With very large databases, using certain columns as ___ helps speed up evaluation of queries.",
+        "answers": [
+            "indexes",
+            "foreign keys",
+            "null space",
+            "primary keys"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "MONGO",
+        "question": "MongoDB is a very popular ___ database.",
+        "answers": [
+            "relational",
+            "SQL type",
+            "noSQL",
+            "JSON"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "MONGO",
+        "question": "MongoDB stores data in ___ format.",
+        "answers": [
+            "BSON",
+            "table",
+            "JSON",
+            "schema"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "MONGO",
+        "question": "MongoDB databases are composed of one or more ___, each of which is composed of one or more ___.",
+        "answers": [
+            "tables, rows",
+            "collections, documents",
+            "schemas, tables",
+            "stores, fields"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "___ must be running in order to be able to connect to any local Mongo database.",
+        "answers": [
+            "mongo",
+            "mongo shell",
+            "mongod",
+            "terminal"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "MONGO",
+        "question": "The mongo shell command to switch to a database called books is:",
+        "answers": [
+            "switch books",
+            "select books",
+            "use books",
+            "db.books"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "MONGO",
+        "question": "To see the name of the currently selected database in the mongo shell, we use the command:",
+        "answers": [
+            "show current",
+            "list dbs",
+            "db.current",
+            "db"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "MONGO",
+        "question": "The ___ method is used to add a new document.",
+        "answers": [
+            "insert()",
+            "add()",
+            "document()",
+            "object()"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "MONGO",
+        "question": "A database may be queried using the ___ method.",
+        "answers": [
+            "locate()",
+            "find()",
+            "query()",
+            "data()"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "The ___ method is used to modify a document.",
+        "answers": [
+            "modify()",
+            "data()",
+            "change()",
+            "update()"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "MONGO",
+        "question": "The ___ method is used to delete documents.",
+        "answers": [
+            "update()",
+            "delete()",
+            "remove()",
+            "erase()"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "A collection can be removed with the ___ method.",
+        "answers": [
+            "remove()",
+            "drop()",
+            "removeCollection()",
+            "dropCollection()"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "A database can be removed and its data deleted using the ___ method.",
+        "answers": [
+            "destroyDatabase()",
+            "dropDatabase()",
+            "removeDatabase()",
+            "eraseDatabase()"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "Each document has a unique ObjectId stored in the ___ field that acts as a ___.",
+        "answers": [
+            "ID, foreign key",
+            "_id, primary key",
+            "_ID, primary key",
+            "id, foreign key"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "The order of query results is specified using the ___ method.",
+        "answers": [
+            "order()",
+            "result()",
+            "find()",
+            "sort()"
+        ],
+        "correctIndex": 4
+    },
+    {
+        "category": "MONGO",
+        "question": "For making a connection, the MongoJS NPM package requires the ___ and the ___.",
+        "answers": [
+            "database URL, collection names",
+            "package, connections file",
+            "database ObjectId, document names",
+            "login ID, password"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "MONGO",
+        "question": "One of the major benefits of Mongoose is to permit developers to define ___ for Mongo data.",
+        "answers": [
+            "models",
+            "compatibility",
+            "stores",
+            "archives"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "MONGO",
+        "question": "By default, Mongoose uses ___ to handle what happens after performing a query. This can be switched to ___ for cleaner code.",
+        "answers": [
+            "responses, data",
+            "callback functions, promises",
+            "XML, AJAX",
+            "objects, JSON"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "category": "MONGO",
+        "question": "A data model can be created using the Mongoose ___ constructor.",
+        "answers": [
+            "Schema",
+            "Collection",
+            "Model",
+            "Record"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "category": "MONGO",
+        "question": "Collections can be combined, similarly to MySQL joins, using the ___ Mongoose method.",
+        "answers": [
+            "join()",
+            "combine()",
+            "populate()",
+            "attach()"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "category": "MONGO",
+        "question": "With Mongoose, the ___ property can be used to link ObjectIds to a particular model.",
+        "answers": [
+            "link",
+            "foreignKey",
+            "ref",
+            "_id"
+        ],
+        "correctIndex": 3
     },
     
 
