@@ -35,12 +35,14 @@ body {
     background-color: #bbb;
     color: black;
     z-index: 2;
+    border-radius: 10px
   }
   
   .flip-card-back {
     background-color: #2980b9;
-    color: white;
+    color: black;
     transform: rotateY(180deg);
+    border-radius: 10px;
     z-index: 1;
   }
 

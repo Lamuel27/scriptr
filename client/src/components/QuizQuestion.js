@@ -3,16 +3,15 @@ import React from "react";
 function QuizQuestion(props) {
     const style = {
         buttonStyle: {
-            "display": "block"
+            "display": "block",
+            "textAlign":"center",
+            "marginLeft":"auto",
+            "marginRight":"auto",
+            "textDecoration":"none"
         },
         questionStyle: {
-            "fontSize":"large"
-        },
-        body: {
-            "overflow":"scroll"
-        },
-        button: {
-            "alignContent":"center"
+            "fontSize":"large",
+            "textAlign":"center"
         }
     }
 
@@ -27,15 +26,12 @@ function QuizQuestion(props) {
                 <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.a}
                 </button>
-                
                 <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.b}
                 </button>
-                
                 <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.c}
                 </button>
-                
                 <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.d}
                 </button>
