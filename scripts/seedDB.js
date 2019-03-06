@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = require("../models");
+const db = require("../models/quizScore");
 
 mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/scriptr"
@@ -1297,9 +1297,9 @@ const quizSeed = [
 
 ];
 
-db.scriptr
+db.Quiz
     .remove({})
-    .then(() => db.scriptr.collection.insertMany(quizSeed))
+    .then(() => db.Quiz.collection.insertMany(quizSeed))
     .then(data => {
         console.log(data.result.n + " questions inserted!");
         process.exit(0);
