@@ -15,7 +15,7 @@ const quizSeed = [
             "Hyper Text Meaningful Language",
             "Hyper Text Markup Logic"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "HTML",
@@ -26,7 +26,7 @@ const quizSeed = [
             "Element",
             "Block"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "HTML",
@@ -37,7 +37,7 @@ const quizSeed = [
             "Indents a block of text",
             "Makes a period at the end of a sentence"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "HTML",
@@ -48,7 +48,7 @@ const quizSeed = [
             "A shape",
             "A block of HTML that acts as a simple container"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "HTML",
@@ -59,7 +59,7 @@ const quizSeed = [
             "<span/>",
             "<span>/"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "HTML",
@@ -70,7 +70,7 @@ const quizSeed = [
             "h1",
             "h10"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "HTML",
@@ -81,7 +81,7 @@ const quizSeed = [
             "<pic>",
             "<img>"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "CSS",
@@ -92,7 +92,7 @@ const quizSeed = [
             "Colorful Special Styling",
             "Cascading Style Sheets"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "CSS",
@@ -103,7 +103,7 @@ const quizSeed = [
             "p [ font-weight: bold ]",
             "p font-weight: bold;"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "HTML",
@@ -114,7 +114,7 @@ const quizSeed = [
             "<a>",
             "<link>"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "CSS",
@@ -125,7 +125,7 @@ const quizSeed = [
             "left",
             "justify"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "CSS",
@@ -136,7 +136,7 @@ const quizSeed = [
             "Relative",
             "Exact"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "CSS",
@@ -147,7 +147,7 @@ const quizSeed = [
             "h-level",
             "z-index"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "CSS",
@@ -158,7 +158,7 @@ const quizSeed = [
             "Relative",
             "Exact"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "CSS",
@@ -169,7 +169,7 @@ const quizSeed = [
             "hide an element",
             "remove all images only"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "CSS",
@@ -180,7 +180,7 @@ const quizSeed = [
             "The CSS file with the highest number in the name",
             "None of them - it will cause an error"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "CSS",
@@ -191,7 +191,7 @@ const quizSeed = [
             "stopping the spread of malware",
             "avoiding website hacking"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "CSS",
@@ -202,7 +202,7 @@ const quizSeed = [
             "state-elements",
             "pseudo-classes"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "CSS",
@@ -213,7 +213,7 @@ const quizSeed = [
             "allow better collaboration among developers",
             "make websites perform faster"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "CSS",
@@ -224,7 +224,7 @@ const quizSeed = [
             "Size requests",
             "Specialized browsers"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "HTML",
@@ -235,7 +235,7 @@ const quizSeed = [
             "Displayport",
             "Screen"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -246,7 +246,7 @@ const quizSeed = [
             "val",
             "variable"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -257,7 +257,7 @@ const quizSeed = [
             "alerts",
             "numbers"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -268,7 +268,7 @@ const quizSeed = [
             "quotes",
             "parentheses"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -279,7 +279,7 @@ const quizSeed = [
             "for loops",
             "console.log"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -290,7 +290,7 @@ const quizSeed = [
             "an ask",
             "a prompt"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -301,7 +301,7 @@ const quizSeed = [
             "variables",
             "This is not possible with JavaScript"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -312,7 +312,7 @@ const quizSeed = [
             "interacting with users",
             "performing calculations"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -323,7 +323,7 @@ const quizSeed = [
             "parentheses",
             "square brackets"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -334,7 +334,7 @@ const quizSeed = [
             "booleans",
             "all of the above"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -345,7 +345,7 @@ const quizSeed = [
             "location",
             "length"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -356,7 +356,7 @@ const quizSeed = [
             "variable",
             "length"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -367,7 +367,7 @@ const quizSeed = [
             "arrays",
             "browser refresh"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -378,7 +378,7 @@ const quizSeed = [
             "===",
             "="
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -389,7 +389,7 @@ const quizSeed = [
             "return",
             "block"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -400,7 +400,7 @@ const quizSeed = [
             "event.key",
             "document.onkeyup"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -411,7 +411,7 @@ const quizSeed = [
             "keyboard.event",
             "event.key"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -422,7 +422,7 @@ const quizSeed = [
             "clicked.getHTMLById",
             "document.ElementsByClass"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -433,7 +433,7 @@ const quizSeed = [
             "concatenate",
             "attach"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -444,7 +444,7 @@ const quizSeed = [
             "snippets",
             "conditions"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -455,7 +455,7 @@ const quizSeed = [
             "strings",
             "definitions"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -466,7 +466,7 @@ const quizSeed = [
             "charAt(0)",
             "indexOf(1)"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -477,7 +477,7 @@ const quizSeed = [
             "maximize",
             "mark"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -488,7 +488,7 @@ const quizSeed = [
             "colons",
             "square brackets"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -499,7 +499,7 @@ const quizSeed = [
             "object('property')",
             "object-property"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -510,7 +510,7 @@ const quizSeed = [
             "object.property",
             "property.[object]"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -521,7 +521,7 @@ const quizSeed = [
             "it",
             "this"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -532,7 +532,7 @@ const quizSeed = [
             "methods",
             "functions"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -543,7 +543,7 @@ const quizSeed = [
             "eternal",
             "primary"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -554,7 +554,7 @@ const quizSeed = [
             "$.each",
             "forEach"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -565,7 +565,7 @@ const quizSeed = [
             "debugger",
             "console"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -576,7 +576,7 @@ const quizSeed = [
             "div",
             "script"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -587,7 +587,7 @@ const quizSeed = [
             "makeDivElement()",
             "createNew('div')"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -598,6 +598,17 @@ const quizSeed = [
             "createPosition",
             "setElement"
         ],
+        "correctIndex": 1
+    },
+    {
+        "category": "JS",
+        "question": "Without using jQuery, a CSS style of an element can be manipulated using the ____ method.",
+        "answers": [
+            "adjustCSS",
+            ".css()",
+            "setAttribute",
+            "setStyle"
+        ],
         "correctIndex": 2
     },
     {
@@ -609,18 +620,7 @@ const quizSeed = [
             "setAttribute",
             "setStyle"
         ],
-        "correctIndex": 3
-    },
-    {
-        "category": "JS",
-        "question": "Without using jQuery, a CSS style of an element can be manipulated using the ____ method.",
-        "answers": [
-            "adjustCSS",
-            ".css()",
-            "setAttribute",
-            "setStyle"
-        ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -631,7 +631,7 @@ const quizSeed = [
             "table",
             "library"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -642,7 +642,7 @@ const quizSeed = [
             "Downloading data from databases",
             "All of the above"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -653,7 +653,7 @@ const quizSeed = [
             "$('myDiv')",
             "$div"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -664,7 +664,7 @@ const quizSeed = [
             "var newButton = create.button;",
             "var newButton = button('new')"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -675,7 +675,7 @@ const quizSeed = [
             ".every",
             ".each"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -686,7 +686,7 @@ const quizSeed = [
             "document.complete",
             "process.ended"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -697,7 +697,7 @@ const quizSeed = [
             "$'.myClass').on('press', function() { ... });",
             "$('.myClass').on(clickMe!, function() { ... });"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -708,7 +708,7 @@ const quizSeed = [
             ".start",
             ".prepend"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "JS",
@@ -719,7 +719,7 @@ const quizSeed = [
             "click()",
             "library()"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -730,7 +730,7 @@ const quizSeed = [
             ".attr",
             ".info"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "JS",
@@ -741,7 +741,7 @@ const quizSeed = [
             ".setClass",
             ".attrClass"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "JS",
@@ -752,7 +752,7 @@ const quizSeed = [
             "$('#myButton').set('SuperButton');",
             "$#myButton('SuperButton');"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "JS",
@@ -763,7 +763,7 @@ const quizSeed = [
             "parent, all",
             "child, parent"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -774,7 +774,7 @@ const quizSeed = [
             "Strict Qualified Language",
             "Stripe Quality Lambda"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -785,7 +785,7 @@ const quizSeed = [
             "JavaScript, SQL",
             "Windows, Mac"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "SQL",
@@ -796,7 +796,7 @@ const quizSeed = [
             "CREATE DATABASE friends_db;",
             "INIT friends_db DATABASE;"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -807,7 +807,7 @@ const quizSeed = [
             "tables, columns",
             "containers, rows"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -818,7 +818,7 @@ const quizSeed = [
             "JOIN",
             "USE"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -829,7 +829,7 @@ const quizSeed = [
             "START toys TABLE ();",
             "INIT toys TABLE ();"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "SQL",
@@ -840,7 +840,7 @@ const quizSeed = [
             "PREVENT EMPTY",
             "MUST VARCHAR"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -851,7 +851,7 @@ const quizSeed = [
             "CHAR",
             "VARCHAR"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -862,7 +862,7 @@ const quizSeed = [
             "USE",
             "VALUE"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "SQL",
@@ -873,7 +873,7 @@ const quizSeed = [
             "VARCHAR",
             "BLOB"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -884,7 +884,7 @@ const quizSeed = [
             "INSERT INTO",
             "ADD INTO"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -895,7 +895,7 @@ const quizSeed = [
             "VALUES",
             "VARCHAR"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -906,7 +906,7 @@ const quizSeed = [
             "This will cause a database error",
             "The second time code execution will be ignored"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "SQL",
@@ -917,7 +917,7 @@ const quizSeed = [
             "REDO",
             "RESET"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -928,7 +928,7 @@ const quizSeed = [
             "FIELD",
             "LOCATION"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "SQL",
@@ -939,7 +939,7 @@ const quizSeed = [
             "modify all the records",
             "prevent location services"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -950,7 +950,7 @@ const quizSeed = [
             "DELETE FROM",
             "REMOVE FROM"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -961,7 +961,7 @@ const quizSeed = [
             "COMMON VALUE",
             "COMBINE INTO"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -972,7 +972,7 @@ const quizSeed = [
             "MINMAX",
             "BETWEEN"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -983,7 +983,7 @@ const quizSeed = [
             "singular",
             "master"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "SQL",
@@ -994,7 +994,7 @@ const quizSeed = [
             "ADD_INTEGER",
             "DEFAULT_ADD"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -1005,7 +1005,7 @@ const quizSeed = [
             "Joins",
             "Combines"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -1016,7 +1016,7 @@ const quizSeed = [
             "database name",
             "all of the above"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -1027,7 +1027,7 @@ const quizSeed = [
             "deleted",
             "created"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -1038,7 +1038,7 @@ const quizSeed = [
             "an array of arrays",
             "a single array"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "SQL",
@@ -1049,7 +1049,7 @@ const quizSeed = [
             "CREATE READ UPDATE DELETE",
             "COMMON RECURSIVE ULTERIOR DESIGN"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "SQL",
@@ -1060,7 +1060,7 @@ const quizSeed = [
             "database.sql, data.sql",
             "schema.sql, seeds.sql"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "SQL",
@@ -1071,7 +1071,7 @@ const quizSeed = [
             "null space",
             "primary keys"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "MONGO",
@@ -1082,7 +1082,7 @@ const quizSeed = [
             "noSQL",
             "JSON"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "MONGO",
@@ -1093,7 +1093,7 @@ const quizSeed = [
             "JSON",
             "schema"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "MONGO",
@@ -1104,7 +1104,7 @@ const quizSeed = [
             "schemas, tables",
             "stores, fields"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1115,7 +1115,7 @@ const quizSeed = [
             "mongod",
             "terminal"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "MONGO",
@@ -1126,7 +1126,7 @@ const quizSeed = [
             "use books",
             "db.books"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "MONGO",
@@ -1137,7 +1137,7 @@ const quizSeed = [
             "db.current",
             "db"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "MONGO",
@@ -1148,7 +1148,7 @@ const quizSeed = [
             "document()",
             "object()"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "MONGO",
@@ -1159,7 +1159,7 @@ const quizSeed = [
             "query()",
             "data()"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1170,7 +1170,7 @@ const quizSeed = [
             "change()",
             "update()"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "MONGO",
@@ -1181,7 +1181,7 @@ const quizSeed = [
             "remove()",
             "erase()"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1192,7 +1192,7 @@ const quizSeed = [
             "removeCollection()",
             "dropCollection()"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1203,7 +1203,7 @@ const quizSeed = [
             "removeDatabase()",
             "eraseDatabase()"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1214,7 +1214,7 @@ const quizSeed = [
             "_ID, primary key",
             "id, foreign key"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1225,7 +1225,7 @@ const quizSeed = [
             "find()",
             "sort()"
         ],
-        "correctIndex": 4
+        "correctIndex": 3
     },
     {
         "category": "MONGO",
@@ -1236,7 +1236,7 @@ const quizSeed = [
             "database ObjectId, document names",
             "login ID, password"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "MONGO",
@@ -1247,7 +1247,7 @@ const quizSeed = [
             "stores",
             "archives"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "MONGO",
@@ -1258,7 +1258,7 @@ const quizSeed = [
             "XML, AJAX",
             "objects, JSON"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "category": "MONGO",
@@ -1269,7 +1269,7 @@ const quizSeed = [
             "Model",
             "Record"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "category": "MONGO",
@@ -1280,7 +1280,7 @@ const quizSeed = [
             "populate()",
             "attach()"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     {
         "category": "MONGO",
@@ -1291,7 +1291,7 @@ const quizSeed = [
             "ref",
             "_id"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     },
     
 

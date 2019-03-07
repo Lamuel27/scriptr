@@ -7,25 +7,23 @@ import API from "../../utils/API";
 class Quiz extends Component {
 
     style = {
-        linkStyle:{
-            "textDecoration":"none"
+        linkStyle: {
+            "textDecoration": "none"
         }
     }
 
     state = {
-        instance: {}
+        questions: []
     }
 
     componentDidMount() {
-        var elems = document.querySelectorAll('.carousel');
-        var inst = M.Carousel.init(elems, {
-            duration: 10,
-        });
-        this.setState({ instance: inst });
         API.getTypeQuestions("HTML")
-        .then(data => {
-            console.log(data)
-        })
+            .then(data => {
+                console.log("Questions:");
+                console.log(data.data);
+                this.setState({ questions: data.data })
+            })
+            .catch(err => console.log(err));
     };
 
     answered() {
@@ -35,42 +33,20 @@ class Quiz extends Component {
     render() {
         return (
             <div className="carousel carousel-slider center">
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2" onClick={() => this.answered}></a>
+                <div className="carousel-fixed-item center">
+                    <a className="btn waves-effect white grey-text darken-text-2" href="" onClick={() => this.answered}></a>
                 </div>
-
-                <a className="carousel-item" href="#one!" style={this.style.linkStyle}><QuizQuestion
-                    question="What does HTML stand for?"
-                    a="How The Man Landed"
-                    b="Hyper Text Markup Language"
-                    c="Hyper Text Meaningful Language"
-                    d="Hyper Text Markup Logic"
-                /></a>
-
-                <a className="carousel-item" href="#two!" style={this.style.linkStyle}><QuizQuestion
-                    question="What is an individual block of HTML called?"
-                    a="Div"
-                    b="Tag"
-                    c="Element"
-                    d="Block"
-                /></a>
-
-                <a className="carousel-item" href="#three!" style={this.style.linkStyle}><QuizQuestion
-                    question="What does the tag '<p>' do?"
-                    a="Creates a paragraph of text"
-                    b="Creates padding around a block"
-                    c="Indents a block of text"
-                    d="Makes a period at the end of a sentence"
-                /></a>
-
-                <a className="carousel-item" href="#four!" style={this.style.linkStyle}><QuizQuestion
-                    question="What is a '<div>'?"
-                    a="A way to divide one number with another number"
-                    b="A block of text"
-                    c="A shape"
-                    d="A block of HTML that acts as a simple container"
-                /></a>
-                
+                {/* {this.state.questions.map(item => (
+                    <a className="carousel-item" href="#one!" key={item._id} style={this.style.linkStyle}>
+                        <QuizQuestion
+                            question={item.question}
+                            a={item.answers[0]}
+                            b={item.answers[1]}
+                            c={item.answers[2]}
+                            d={item.answers[3]}
+                        />
+                    </a>
+                ))} */}
             </div>
         )
     }
