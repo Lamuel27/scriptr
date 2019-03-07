@@ -21,7 +21,7 @@ function QuizQuestion(props) {
 
     return (
         <div className="ui form">
-            <div className="question">
+            <div className="question" style={style.questionStyle}>
                 <label style={style.questionStyle}>{props.question}</label>
                 <button className="waves-effect waves-light btn" style={style.buttonStyle}>
                     {props.a}
