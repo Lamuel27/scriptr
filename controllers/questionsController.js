@@ -1,15 +1,17 @@
 const db = require("../models");
 
-// methods for the QuizController
+// methods for the questionsController
 module.exports = {
   findAll: function(req, res) {
     db.Quiz.find(req.query)
       .then(dbQuiz => res.json(dbQuiz))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
-    db.Quiz.findById(req.params.id)
-      .then(dbQuiz => res.json(dbQuiz))
+  findByType: function(req, res) {
+    db.Questions.find({
+      category: req.params.type
+    })
+      .then(data => res.json(data))
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {

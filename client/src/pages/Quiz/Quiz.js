@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import QuizQuestion from '../../components/QuizQuestion';
 import "./Quiz.css";
 import M from "materialize-css";
+import API from "../../utils/API";
 
 class Quiz extends Component {
 
@@ -20,7 +21,11 @@ class Quiz extends Component {
         var inst = M.Carousel.init(elems, {
             duration: 10,
         });
-        this.setState({ instance: inst })
+        this.setState({ instance: inst });
+        API.getTypeQuestions("HTML")
+        .then(data => {
+            console.log(data)
+        })
     };
 
     answered() {

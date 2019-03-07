@@ -1,3 +1,3 @@
 module.exports = {
-    Quiz: require("./quizScore")
+    Questions: require("./Questions")
 }
