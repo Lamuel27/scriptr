@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const quizSchema = new Schema({
+const questionsSchema = new Schema({
   
     category: {type: String},
     question: {type: String},
@@ -10,6 +10,6 @@ const quizSchema = new Schema({
 
 });
 
-const Quiz = mongoose.model("Quiz", quizSchema);
+const Questions = mongoose.model("Questions", questionsSchema);
 
-module.exports = Quiz;
+module.exports = Questions;

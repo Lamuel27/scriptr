@@ -1297,9 +1297,9 @@ const quizSeed = [
 
 ];
 
-db.Quiz
+db.Questions
     .remove({})
-    .then(() => db.Quiz.collection.insertMany(quizSeed))
+    .then(() => db.Questions.collection.insertMany(quizSeed))
     .then(data => {
         console.log(data.result.n + " questions inserted!");
         process.exit(0);
