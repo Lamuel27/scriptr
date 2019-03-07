@@ -14,7 +14,7 @@ export default {
     return axios.delete("/api/questions/" + id);
   },
   // Saves a question to the database
-  saveQuestion: function(bookData) {
-    return axios.post("/api/questions", bookData);
+  saveQuestion: function(questionData) {
+    return axios.post("/api/questions", questionData);
   }
 };
