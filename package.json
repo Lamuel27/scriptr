@@ -12,6 +12,7 @@
     "bootstrap": "^3.3.7",
     "express": "^4.16.4",
     "if-env": "^1.0.4",
+    "materialize-css": "^1.0.0",
     "mongoose": "^5.4.17",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.2",
