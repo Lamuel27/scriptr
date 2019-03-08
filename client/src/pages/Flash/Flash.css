@@ -3,6 +3,9 @@ body {
     margin: 40px;
   }
   
+  h1 {
+    font-size: 30px;
+  }
   .flip-card {
     background-color: transparent;
     width: 300px;

@@ -6,6 +6,10 @@ import Profile from './pages/Profile/Profile';
 import Quiz from './pages/Quiz/Quiz';
 import JsFiddle from './pages/JsFiddle/JsFiddle';
 import ActivitySelect from './pages/ActivitySelect/ActivitySelect';
+import FlashCSS from './pages/Flash/FlashCSS';
+import FlashJS from './pages/Flash/FlashJS';
+import FlashSQL from './pages/Flash/FlashSQL';
+import FlashMongo from './pages/Flash/FlashMongo';
 import Flash from './pages/Flash/Flash';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
@@ -44,7 +48,42 @@ export const makeMainRoutes = () => {
           render={props =>
             !auth.isAuthenticated()
               ? <Redirect to="/home" />
+              : <ActivitySelect auth={auth} {...props} />}
+        />
+        <Route
+          path="/flash/HTML"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
               : <Flash auth={auth} {...props} />}
+        />
+        <Route
+          path="/flash/JS"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <FlashJS auth={auth} {...props} />}
+        />
+        <Route
+          path="/flash/SQL"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <FlashSQL auth={auth} {...props} />}
+        />
+        <Route
+          path="/flash/MONGO"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <FlashMongo auth={auth} {...props} />}
+        />
+        <Route
+          path="/flash/CSS"
+          render={props =>
+            !auth.isAuthenticated()
+              ? <Redirect to="/home" />
+              : <FlashCSS auth={auth} {...props} />}
         />
         <Route
           path="/quiz"
