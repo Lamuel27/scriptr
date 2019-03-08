@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Activities from './components/Activity';
 import ProfileCard from './components/ProfileCard';
 
 class App extends Component {
@@ -104,6 +105,8 @@ class App extends Component {
         {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
           <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
 
+          {/* {isAuthenticated() &&
+          <Activities name={this.props}/>} */}
 
         {/* {isAuthenticated() &&
               <Button

@@ -17,7 +17,7 @@ class Quiz extends Component {
     }
 
     componentDidMount() {
-        API.getTypeQuestions("HTML")
+        API.getTypeQuestions("JS")
             .then(data => {
                 console.log("Questions:");
                 console.log(data.data);

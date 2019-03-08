@@ -4,7 +4,7 @@
   "engines": {
     "node": "10.15.1"
   },
-  "private": true,  
+  "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "auth0-js": "^9.0.0",
@@ -13,7 +13,7 @@
     "express-jwt": "^5.3.1",
     "jquery": "^3.3.1",
     "jwks-rsa": "^1.4.0",
-    "materialize-css": "^1.0.0-rc.2",
+    "materialize-css": "^1.0.0",
     "mongoose": "^5.4.17",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.2",
