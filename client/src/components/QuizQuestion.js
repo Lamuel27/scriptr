@@ -7,7 +7,8 @@ function QuizQuestion(props) {
             "textAlign":"center",
             "marginLeft":"auto",
             "marginRight":"auto",
-            "textDecoration":"none"
+            "textDecoration":"none",
+            "width":"20%"
         },
         questionStyle: {
             "fontSize":"large",
