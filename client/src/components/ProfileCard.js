@@ -51,15 +51,15 @@ class ProfileCard extends Component {
 
         return (
             <div class="card" style={this.style.cardBackground}>
-                <Link to='/profile' className="header" href="/profile"><div class="card-image">
+                <Link to='/profile' class="header" href="/profile"><div className="card-image">
                     <img style={this.style.cardImage} src={profile.picture} alt="Profile Pic"></img>
-                    <span class="card-title" style={this.style.cardTitle}>{profile.nickname}</span>
+                    <span className="card-title" style={this.style.cardTitle}>{profile.nickname}</span>
                 </div>
                 <div class="card-content">
                     <p style={this.style.cardSubtitle}>Super-Coder (Level 43)</p>
                 </div></Link>
                 <div class="card-action">
-                    <Link to='/profile' className="header" href="/profile">Profile</Link>
+                    <Link to='/profile' class="header" href="/profile">Profile</Link>
                 </div>
             </div>
         )
