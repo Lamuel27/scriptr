@@ -4,27 +4,11 @@ import '../pages/ActivitySelect/ActivitySelect.css'
 
 
 class Activities extends Component {
-    constructor(props) {
-        super(props)
-    }
+   
     render() {
         return (
             <div style = {{ "backgroundColor":"RGBA(255,255,255,.5"}}>
-            <Link to="/flash/HTML">
-            <img className = "zoom" style = {{ "width":"17%" }} src = "http://www.stickpng.com/assets/images/5847f5bdcef1014c0b5e489c.png"></img>
-            </Link>
-            <Link to="/flash/CSS">
-            <img className = "zoom" style = {{ "width":"17%" }} src = "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"></img>
-            </Link>
-            <Link to="/flash/JS">
-            <img className = "zoom" style = {{ "width":"20%" }} src = "https://fuzati.com/wp-content/uploads/2016/12/JS-Logo.png"></img>
-            </Link>
-            <Link to="/flash/SQL">
-            <img className = "zoom" style = {{ "width":"20%" }} src = "https://clipart.info/images/ccovers/1499794875MySQL-logo-png-transparent.png"></img>
-            </Link>
-            <Link to="/flash/MONGO">
-            <img className = "zoom" style = {{ "width":"24%" }} src = "http://pluspng.com/img-png/logo-mongodb-png-file-mongodb-logo-svg-1280.png"></img>
-            </Link>
+            {this.props.children}
             </div>
           );
         }

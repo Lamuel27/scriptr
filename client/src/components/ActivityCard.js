@@ -1,15 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+// import '../pages/Flash/Flash.css';
 
 function ActivityCard(props) {
     return (
-        <div style={{ "marginLeft":"auto","marginRight":"auto" }}
-            className="ui card">
-            <div className="image">
-            <i className={props.icon} style={{"width":"100%","height":"150px","fontSize":"100px"}}></i>
-            </div>
-            <div className="content">
-                <a className="header" href="/profile"><h4 style={{ "color": "black", "textAlign":"center","alignContent":"center"}}>{props.children}</h4></a>
-            </div>
+        <div>
+            <Link to={"/flash/" + props.parameter}>
+                <img className="zoom" src="http://www.stickpng.com/assets/images/5847f5bdcef1014c0b5e489c.png" alt = ""></img>
+            </Link>
         </div>
     )
 }

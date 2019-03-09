@@ -1,5 +1,5 @@
 const db = require("../models");
-
+console.log("ello")
 // methods for the questionsController
 module.exports = {
   findAll: function(req, res) {
@@ -8,6 +8,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findByType: function(req, res) {
+    console.log(req.params.type)
     db.Questions.find({
       category: req.params.type
     })
