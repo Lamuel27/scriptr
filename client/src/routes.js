@@ -76,6 +76,26 @@ export const makeMainRoutes = () => {
               : <Quiz auth={auth} {...props} />}
         />
         <Route
+          path="/quiz/HTML"
+          
+        />
+        <Route
+          path="/quiz/CSS"
+          
+        />
+        <Route
+          path="/quiz/JS"
+          
+        />
+        <Route
+          path="/quiz/SQL"
+          
+        />
+        <Route
+          path="/quiz/MONGO"
+          
+        />
+        <Route
           path="/fiddle"
           render={props =>
             !auth.isAuthenticated()
