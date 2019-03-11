@@ -69,6 +69,15 @@ class Quiz extends Component {
     }
     var score = correct/total;
     console.log("The user's score is " + score*10 + "%")
+
+    // Make an API call to the model containing the user's info, and fetch the user
+    // Create a "correctAllTime" variable, set it to the user's current "correct" value from the DB
+    // Create a "totalAllTime" variable, set it to the user's current "total" value from the DB
+    // var newCorrectAllTime = correctAllTime + correct
+    // var newTotalAllTime = totalAllTime + total
+    // Replace those values in the DB
+
+    // Take the user to a result page for this quiz
   }
 
   render() {
