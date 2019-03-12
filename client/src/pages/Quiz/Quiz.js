@@ -67,8 +67,8 @@ class Quiz extends Component {
       }
       total++;
     }
-    var score = correct/total;
-    console.log("The user's score is " + score*10 + "%")
+    var score = correct / total;
+    console.log("The user's score is " + score * 10 + "%")
 
     // Make an API call to the model containing the user's info, and fetch the user
     // Create a "correctAllTime" variable, set it to the user's current "correct" value from the DB
@@ -101,31 +101,35 @@ class Quiz extends Component {
             <img className="zoom" style={{ "width": "24%" }} src="http://pluspng.com/img-png/logo-mongodb-png-file-mongodb-logo-svg-1280.png" alt=""></img>
           </Link>
         </Activities>
-        {this.state.questions.map(item => (
+        {this.state.questions.map((item, index) => (
           <QuizQuestion
             key={item._id}
             question={item.question}>
             <QuizAnswer
               id={item._id}
-              onClick={() => this.answerHandler(item._id, 0)}
+              index={index}
+              answerHandler={this.answerHandler}
             >
               {item.answers[0]}
             </QuizAnswer>
             <QuizAnswer
               id={item._id}
-              onClick={() => this.answerHandler(item._id, 1)}
+              index={index}
+              answerHandler={this.answerHandler}
             >
               {item.answers[1]}
             </QuizAnswer>
             <QuizAnswer
               id={item._id}
-              onClick={() => this.answerHandler(item._id, 2)}
+              index={index}
+              answerHandler={this.answerHandler}
             >
               {item.answers[2]}
             </QuizAnswer>
             <QuizAnswer
               id={item._id}
-              onClick={() => this.answerHandler(item._id, 3)}
+              index={index}
+              answerHandler={this.answerHandler}
             >
               {item.answers[3]}
             </QuizAnswer>

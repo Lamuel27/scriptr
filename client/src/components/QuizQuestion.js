@@ -8,10 +8,6 @@ function QuizQuestion(props) {
         }
     }
 
-    function evaluate() {
-        // Put logic here for evaluating answer
-    }
-
     return (
         <div className="ui form">
             <div className="question" style={style.questionStyle}>

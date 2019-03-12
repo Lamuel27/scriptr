@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 class Jumbotron extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     style = {
         jumboText: {
@@ -23,7 +20,7 @@ class Jumbotron extends Component {
                     <p className="lead" style={this.style.jumboSubtext}>Quizzes. Flashcards. Interactive Problems.</p>
                     <hr className="my-4"></hr>
                     <p style={this.style.jumboSubtext}>Stay on top of your coding skills.</p>
-                    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <button className="btn btn-primary btn-lg">Learn more</button>
                 </div>
             </div>
         )

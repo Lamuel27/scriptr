@@ -10,8 +10,6 @@ import Flash from './pages/Flash/Flash';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
-import ActivityCard from './components/ActivityCard';
-import Flashcard from './components/Flashcard';
 
 const auth = new Auth();
 

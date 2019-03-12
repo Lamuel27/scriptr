@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './Flash.css';
 import Flashcard from '../../components/Flashcard';
 import API from '../../utils/API';
-import ActivityCard from '../../components/ActivityCard';
 import Activities from '../../components/Activity';
-import { get } from 'https';
 import { Link } from 'react-router-dom';
 
 class Flash extends Component {

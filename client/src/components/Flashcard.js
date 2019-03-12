@@ -16,10 +16,6 @@ function Flashcard(props) {
         }
     }
 
-    function evaluate() {
-        // Put logic here for evaluating answer
-    }
-
     return (
         <div className="flip-card">
             <div className="flip-card-inner">
