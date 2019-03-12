@@ -55,20 +55,23 @@ class Quiz extends Component {
     console.log(this.state.answers);
   }
 
-  evaulate = event => {
+  evaluate = event => {
+    console.log("boosh")
     event.preventDefault();
     var correct = 0;
     var total = 0;
     for (var i = 0; i < this.state.questions.length; i++) {
       var question = this.state.questions[i];
+      console.log("The correct index is: " + question.correctIndex)
       var answer = this.state.answers.filter(item => item.answerId === question._id);
-      if (question.correctIndex === answer.answerIndex) {
+      console.log("The user answered: " + answer[0].answerIndex)
+      if (question.correctIndex === answer[0].answerIndex) {
         correct++;
       }
       total++;
     }
     var score = correct / total;
-    console.log("The user's score is " + score * 10 + "%")
+    console.log("The user's score is " + score * 100 + "%")
 
     // Make an API call to the model containing the user's info, and fetch the user
     // Create a "correctAllTime" variable, set it to the user's current "correct" value from the DB
@@ -107,35 +110,40 @@ class Quiz extends Component {
             question={item.question}>
             <QuizAnswer
               id={item._id}
-              index={index}
+              index={0}
               answerHandler={this.answerHandler}
             >
               {item.answers[0]}
             </QuizAnswer>
             <QuizAnswer
               id={item._id}
-              index={index}
+              index={1}
               answerHandler={this.answerHandler}
             >
               {item.answers[1]}
             </QuizAnswer>
             <QuizAnswer
               id={item._id}
-              index={index}
+              index={2}
               answerHandler={this.answerHandler}
             >
               {item.answers[2]}
             </QuizAnswer>
             <QuizAnswer
               id={item._id}
-              index={index}
+              index={3}
               answerHandler={this.answerHandler}
             >
               {item.answers[3]}
             </QuizAnswer>
           </QuizQuestion>
         ))}
-        <button id="submitButton" className="waves-effect waves-light btn" onClick={() => this.evaluate}>Submit</button>
+        <button
+        id="submitButton"
+        className="waves-effect waves-light btn"
+        onClick={this.evaluate}
+        >
+        Submit</button>
       </div>
     )
   }
