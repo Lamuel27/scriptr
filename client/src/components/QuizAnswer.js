@@ -13,7 +13,7 @@ function QuizAnswer(props) {
         }
     }
     return (
-        <button id={props.id} className="waves-effect waves-light btn" style={style.buttonStyle}>
+        <button id={props.id} className="waves-effect waves-light btn" style={style.buttonStyle} onClick={(e) => props.answerHandler(props.id, props.index)}>
             {props.children}
         </button>
     )

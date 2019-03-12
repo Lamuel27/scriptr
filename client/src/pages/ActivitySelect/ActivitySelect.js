@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import Activities from '../../components/Activity';
-// import "./ActivitySelect.css"
 
 class ActivitySelect extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (

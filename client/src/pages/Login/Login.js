@@ -1,4 +1,3 @@
-
 import React, { Component } from "react"
 import { Navbar, Button } from 'react-bootstrap';
 import Auth from '../../Auth/Auth.js';
@@ -31,9 +30,9 @@ class Login extends Component {
           <div>
             <Navbar fluid>
               <Navbar.Header>
-                <Navbar.Brand>
+                {/* <Navbar.Brand>
                   <a href="#">Auth0 - React</a>
-                </Navbar.Brand>
+                </Navbar.Brand> */}
                 <Button
                   bsStyle="primary"
                   className="btn-margin"

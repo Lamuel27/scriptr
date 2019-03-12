@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Activities from './components/Activity';
 import ProfileCard from './components/ProfileCard';
 
 class App extends Component {
@@ -40,93 +39,15 @@ class App extends Component {
   }
 
   render() {
-    const { isAuthenticated, userProfile, getProfile } = this.props.auth;
+    const { isAuthenticated } = this.props.auth;
     return (
       <div>
         <Navbar name={this.props} />
         <div style={this.style.pusher}></div>
 
-        {/* <Navbar fluid>
-          <Navbar.Header> */}
-        {/* <Navbar.Brand>
-              <a onClick={this.goTo.bind(this, 'home')}>Welcome to scriptr!</a>
-            </Navbar.Brand> */}
-
-
-        {/* <Button
-              bsStyle="primary"
-              className="btn-margin"
-              onClick={this.goTo.bind(this, 'home')}
-            >
-              Home
-            </Button> */}
-        {/* {!isAuthenticated() &&
-              <Button
-                id="qsLoginBtn"
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.login.bind(this)}
-              >
-                Log In
-              </Button>} */}
-        {/* {isAuthenticated() &&
-              <Button
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.goTo.bind(this, 'profile')}
-              >
-                Profile
-              </Button>} */}
-        {/* {isAuthenticated() &&
-              <Button
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.goTo.bind(this, 'activities')}
-              >
-                Activities
-              </Button>} */}
-        {/* {isAuthenticated() &&
-              <Button
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.goTo.bind(this, 'quiz')}
-              >
-                Quiz
-          </Button>} */}
-        {/* {isAuthenticated() &&
-              <Button
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.goTo.bind(this, 'fiddle')}
-              >
-                Fiddle
-           </Button>} */}
-
         {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
           <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
 
-          {/* {isAuthenticated() &&
-          <Activities name={this.props}/>} */}
-
-        {/* {isAuthenticated() &&
-              <Button
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.renewToken.bind(this)}
-              >
-                Renew Token
-              </Button>} */}
-        {/* {isAuthenticated() &&
-              <Button
-                id="qsLogoutBtn"
-                bsStyle="primary"
-                className="btn-margin"
-                onClick={this.logout.bind(this)}
-                >
-                Log Out
-              </Button>}
-          </Navbar.Header>
-        </Navbar> */}
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-// import '../pages/Flash/Flash.css';
 
 function ActivityCard(props) {
     return (

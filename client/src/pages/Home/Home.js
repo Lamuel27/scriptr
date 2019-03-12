@@ -6,7 +6,6 @@ import './Home.css';
 
 class Home extends Component {
   render() {
-    const { isAuthenticated, login, getExpiryDate } = this.props.auth;
     return (
       <div>
         <Jumbotron />
