@@ -2,12 +2,12 @@ const db = require("../models");
 console.log("ello")
 // methods for the questionsController
 module.exports = {
-  findAll: function(req, res) {
+  findAll: function (req, res) {
     db.Questions.find(req.query)
       .then(dbQuiz => res.json(dbQuiz))
       .catch(err => res.status(422).json(err));
   },
-  findByType: function(req, res) {
+  findByType: function (req, res) {
     console.log(req.params.type)
     db.Questions.find({
       category: req.params.type
@@ -15,17 +15,17 @@ module.exports = {
       .then(data => res.json(data))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
+  create: function (req, res) {
     db.Questions.create(req.body)
       .then(dbQuiz => res.json(dbQuiz))
       .catch(err => res.status(422).json(err));
   },
-  update: function(req, res) {
+  update: function (req, res) {
     db.Questions.findOneAndUpdate({ id: req.params.id }, req.body)
       .then(dbQuiz => res.json(dbQuiz))
       .catch(err => res.status(422).json(err));
   },
-  remove: function(req, res) {
+  remove: function (req, res) {
     db.Questions.findById(req.params.id)
       .then(dbQuiz => dbQuiz.remove())
       .then(dbQuiz => res.json(dbQuiz))
