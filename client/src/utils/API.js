@@ -16,5 +16,13 @@ export default {
   // Saves a question to the database
   saveQuestion: function(questionData) {
     return axios.post("/api/questions", questionData);
+  },
+
+  saveUser: function(userData) {
+    return axios.post("/api/users", userData);
+  },
+
+  getUser: function(userData) {
+    return axios.get("/api/users", userData);
   }
 };

@@ -84,6 +84,17 @@ const quizSeed = [
         "correctIndex": 3
     },
     {
+        "category": "HTML",
+        "question": "How do you write a paragraph tag?",
+        "answers": [
+            "<paragraph>",
+            "<p>",
+            "<para>",
+            "<pg>"
+        ],
+        "correctIndex": 1
+    },
+    {
         "category": "CSS",
         "question": "What does CSS stand for?",
         "answers": [
