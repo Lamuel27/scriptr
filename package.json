@@ -1,6 +1,9 @@
 {
   "name": "token-renewal",
   "version": "0.2.0",
+  "engines": {
+    "node": "10.15.1"
+  },
   "private": true,
   "proxy": "http://localhost:3001",
   "devDependencies": {
