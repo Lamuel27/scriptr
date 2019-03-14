@@ -21,7 +21,7 @@ class Quiz extends Component {
       "textAlign": "center"
     },
     submitButtonStyle: {
-      "display": "block",
+      "display": "none",
       "textAlign": "center",
       "marginLeft": "auto",
       "marginRight": "auto"
@@ -55,6 +55,7 @@ class Quiz extends Component {
         this.setState({ questions: questions })
       })
       .catch(err => console.log(err));
+      $("#submitButton").attr("style", "display: block; text-align: center; margin-left: auto; margin-right: auto")
   }
 
   answerHandler = (id, index) => {
@@ -73,35 +74,38 @@ class Quiz extends Component {
   evaluate = event => {
     console.log("boosh")
     event.preventDefault();
-    var correct = 0;
-    var total = 0;
-    for (var i = 0; i < this.state.questions.length; i++) {
-      var question = this.state.questions[i];
-      console.log("The correct index is: " + question.correctIndex)
-      var answer = this.state.answers.filter(item => item.answerId === question._id);
-      console.log("The user answered: " + answer[0].answerIndex)
-      if (question.correctIndex === answer[0].answerIndex) {
-        correct++;
+    if (this.state.answers.length === 10) {
+      var correct = 0;
+      var total = 0;
+      for (var i = 0; i < this.state.questions.length; i++) {
+        var question = this.state.questions[i];
+        console.log("The correct index is: " + question.correctIndex)
+        var answer = this.state.answers.filter(item => item.answerId === question._id);
+        console.log("The user answered: " + answer[0].answerIndex)
+        if (question.correctIndex === answer[0].answerIndex) {
+          correct++;
+        }
+        total++;
       }
-      total++;
+      var score = correct / total;
+      this.setState({ score: score })
+      console.log("The user's score is " + score * 100 + "%")
+
+      // Make an API call to the model containing the user's info, and fetch the user
+      // Create a "correctAllTime" variable, set it to the user's current "correct" value from the DB
+      // Create a "totalAllTime" variable, set it to the user's current "total" value from the DB
+      // var newCorrectAllTime = correctAllTime + correct
+      // var newTotalAllTime = totalAllTime + total
+      // Replace those values in the DB
+
+      // Take the user to a result page for this quiz
     }
-    var score = correct / total;
-    this.setState({ score: score })
-    console.log("The user's score is " + score * 100 + "%")
-
-    // Make an API call to the model containing the user's info, and fetch the user
-    // Create a "correctAllTime" variable, set it to the user's current "correct" value from the DB
-    // Create a "totalAllTime" variable, set it to the user's current "total" value from the DB
-    // var newCorrectAllTime = correctAllTime + correct
-    // var newTotalAllTime = totalAllTime + total
-    // Replace those values in the DB
-
-    // Take the user to a result page for this quiz
   }
 
   reset = () => {
     console.log("boosh")
     $("#questionsArea").empty();
+    $("#submitButton").attr("style", "display: none; text-align: center; margin-left: auto; margin-right: auto")
   }
 
   render() {
@@ -109,15 +113,15 @@ class Quiz extends Component {
       <div>
         <div id="modal1" className="modal modal-fixed-footer" style={this.style.modalStyle}>
           <div className="modal-content" style={this.style.modalContentStyle}>
-            <h4>Congratulations!</h4>
-            <p>Your score was {this.state.score * 100}%</p>
+            <h4>{this.state.answers.length===10 ? "Finished!" : "Whoops!"}</h4>
+            <p>{this.state.answers.length===10 ? "Your score was " + this.state.score * 100 + "%" : "You must complete all answers before submitting."}</p>
             <br />
           </div>
           <div className="modal-footer">
             <button
               id={this.state.id}
               className="modal-close waves-effect waves-green btn"
-              onClick={() => this.reset()}
+              onClick={this.state.answers.length===10 ? this.reset : ""}
             >
               Okay
             </button>
@@ -142,7 +146,7 @@ class Quiz extends Component {
           </Link>
         </Activities>
         <div id="questionsArea">
-          {this.state.questions.map((item, index) => (
+          {this.state.questions.map((item) => (
             <QuizQuestion
               key={item._id}
               question={item.question}>
@@ -180,16 +184,16 @@ class Quiz extends Component {
               </QuizAnswer>
             </QuizQuestion>
           ))}
-          <button
-            id="submitButton"
-            href="#modal1"
-            style={this.style.submitButtonStyle}
-            className="waves-effect waves-light btn modal-trigger"
-            onClick={this.evaluate}
-          >
-            Submit
-          </button>
         </div>
+        <button
+          id="submitButton"
+          href="#modal1"
+          style={this.style.submitButtonStyle}
+          className="waves-effect waves-light btn modal-trigger"
+          onClick={this.evaluate}
+        >
+          Submit
+        </button>
       </div>
     )
   }
