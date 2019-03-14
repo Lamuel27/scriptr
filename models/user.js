@@ -9,6 +9,6 @@ const userSchema = new Schema ({
     updated_at: { type: String }
 });
 
-const User = mongoose.modelNames("User", userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;
