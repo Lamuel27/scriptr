@@ -5,18 +5,33 @@ import API from "../../utils/API";
 import { Link } from 'react-router-dom';
 import Activities from '../../components/Activity';
 import QuizAnswer from '../../components/QuizAnswer';
+import $ from "jquery";
 
 class Quiz extends Component {
 
   style = {
     linkStyle: {
       "textDecoration": "none"
+    },
+    modalStyle: {
+      "width": "400px!important",
+      "height": "200px!important"
+    },
+    modalContentStyle: {
+      "textAlign": "center"
+    },
+    submitButtonStyle: {
+      "display": "block",
+      "textAlign": "center",
+      "marginLeft": "auto",
+      "marginRight": "auto"
     }
   }
 
   state = {
     questions: [],
-    answers: []
+    answers: [],
+    score: 0
   }
 
   getData = type => {
@@ -43,7 +58,7 @@ class Quiz extends Component {
   }
 
   answerHandler = (id, index) => {
-    console.log("boosh")
+    console.log("boosh");
     var answers = (this.state.answers)
     var answer = {
       answerId: id,
@@ -71,6 +86,7 @@ class Quiz extends Component {
       total++;
     }
     var score = correct / total;
+    this.setState({ score: score })
     console.log("The user's score is " + score * 100 + "%")
 
     // Make an API call to the model containing the user's info, and fetch the user
@@ -83,9 +99,30 @@ class Quiz extends Component {
     // Take the user to a result page for this quiz
   }
 
+  reset = () => {
+    console.log("boosh")
+    $("#questionsArea").empty();
+  }
+
   render() {
     return (
       <div>
+        <div id="modal1" className="modal modal-fixed-footer" style={this.style.modalStyle}>
+          <div className="modal-content" style={this.style.modalContentStyle}>
+            <h4>Congratulations!</h4>
+            <p>Your score was {this.state.score * 100}%</p>
+            <br />
+          </div>
+          <div className="modal-footer">
+            <button
+              id={this.state.id}
+              className="modal-close waves-effect waves-green btn"
+              onClick={() => this.reset()}
+            >
+              Okay
+            </button>
+          </div>
+        </div >
         <h1 style={{ "textAlign": "center", "color": "white" }}>Take a Quiz</h1>
         <Activities>
           <Link to={"/quiz/HTML"} onClick={this.getData.bind(this, "HTML")}>
@@ -104,46 +141,55 @@ class Quiz extends Component {
             <img className="zoom" style={{ "width": "24%" }} src="http://pluspng.com/img-png/logo-mongodb-png-file-mongodb-logo-svg-1280.png" alt=""></img>
           </Link>
         </Activities>
-        {this.state.questions.map((item, index) => (
-          <QuizQuestion
-            key={item._id}
-            question={item.question}>
-            <QuizAnswer
-              id={item._id}
-              index={0}
-              answerHandler={this.answerHandler}
-            >
-              {item.answers[0]}
-            </QuizAnswer>
-            <QuizAnswer
-              id={item._id}
-              index={1}
-              answerHandler={this.answerHandler}
-            >
-              {item.answers[1]}
-            </QuizAnswer>
-            <QuizAnswer
-              id={item._id}
-              index={2}
-              answerHandler={this.answerHandler}
-            >
-              {item.answers[2]}
-            </QuizAnswer>
-            <QuizAnswer
-              id={item._id}
-              index={3}
-              answerHandler={this.answerHandler}
-            >
-              {item.answers[3]}
-            </QuizAnswer>
-          </QuizQuestion>
-        ))}
-        <button
-        id="submitButton"
-        className="waves-effect waves-light btn"
-        onClick={this.evaluate}
-        >
-        Submit</button>
+        <div id="questionsArea">
+          {this.state.questions.map((item, index) => (
+            <QuizQuestion
+              key={item._id}
+              question={item.question}>
+              <QuizAnswer
+                id={item._id}
+                index={0}
+                answerHandler={this.answerHandler}
+                active="yes"
+              >
+                {item.answers[0]}
+              </QuizAnswer>
+              <QuizAnswer
+                id={item._id}
+                index={1}
+                answerHandler={this.answerHandler}
+                active="yes"
+              >
+                {item.answers[1]}
+              </QuizAnswer>
+              <QuizAnswer
+                id={item._id}
+                index={2}
+                answerHandler={this.answerHandler}
+                active="yes"
+              >
+                {item.answers[2]}
+              </QuizAnswer>
+              <QuizAnswer
+                id={item._id}
+                index={3}
+                answerHandler={this.answerHandler}
+                active="yes"
+              >
+                {item.answers[3]}
+              </QuizAnswer>
+            </QuizQuestion>
+          ))}
+          <button
+            id="submitButton"
+            href="#modal1"
+            style={this.style.submitButtonStyle}
+            className="waves-effect waves-light btn modal-trigger"
+            onClick={this.evaluate}
+          >
+            Submit
+          </button>
+        </div>
       </div>
     )
   }
