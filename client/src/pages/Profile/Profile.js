@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Panel, ControlLabel, Glyphicon } from 'react-bootstrap';
 import './Profile.css';
+import API from "../../utils/API";
+
 
 class Profile extends Component {
   componentWillMount() {
@@ -13,7 +15,26 @@ class Profile extends Component {
     } else {
       this.setState({ profile: userProfile });
     }
+};
+
+componentDidMount() {
+  const { userProfile } = this.props.auth;
+  if (userProfile) {
+  this.saveUser(userProfile)
+  console.log(userProfile)
   }
+}
+saveUser = (userProfile) => {
+  var data={
+    sub: userProfile.sub,
+    nickname: userProfile.nickname,
+    name: userProfile.name,
+    picture: userProfile.picture,
+    updated_at: userProfile.updated_at
+  };
+  API.saveUser(data).catch(err => console.log(err));
+
+}
   render() {
     console.log(this.props.auth)
 
