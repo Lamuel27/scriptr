@@ -28,7 +28,7 @@ class App extends Component {
   renewToken() {
     const { renewSession } = this.props.auth;
     renewSession();
-  }
+  }z
 
   componentDidMount() {
     const { renewSession } = this.props.auth;
