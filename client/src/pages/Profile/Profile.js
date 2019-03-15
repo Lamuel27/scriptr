@@ -65,6 +65,7 @@ class Profile extends Component {
     API.saveUser(data).catch(err => console.log(err));
 
   }
+
   render() {
     console.log(this.props.auth)
 
@@ -74,7 +75,7 @@ class Profile extends Component {
       <div className="container">
         <div className="profile-area">
           <div className="col s12 m7">
-            <div className="card horizontal large">
+            <div className="card horizontal">
               <div className="card-image" style={this.style.cardImage}>
                 <img src={profile.picture} alt=""></img>
               </div>

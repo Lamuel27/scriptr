@@ -17,7 +17,18 @@ class Flash extends Component {
       .then(data => {
         console.log("Questions:");
         console.log(data);
-        this.setState({ questions: data.data })
+        var questions = [];
+
+        for (var i = 0; i < 8; i++) {
+          var randomInt = Math.floor(Math.random() * (data.data.length))
+          var randomQ = {};
+          console.log(randomInt)
+          randomQ = data.data[randomInt];
+          console.log(randomQ)
+          questions.push(randomQ);
+          data.data.splice(randomInt, 1);
+        }
+        this.setState({ questions: questions })
       })
       .catch(err => console.log(err));
   }

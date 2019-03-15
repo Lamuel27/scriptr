@@ -31,7 +31,9 @@ class Quiz extends Component {
   state = {
     questions: [],
     answers: [],
-    score: 0
+    score: 0,
+    correct: 0,
+    total: 0
   }
 
   getData = type => {
@@ -56,6 +58,14 @@ class Quiz extends Component {
       })
       .catch(err => console.log(err));
       $("#submitButton").attr("style", "display: block; text-align: center; margin-left: auto; margin-right: auto")
+  }
+
+  updateUser = (newCorrect, newTotal) => {
+    var data = {
+      correct: newCorrect,
+      total: newTotal
+    }
+    API.updateUser(data)
   }
 
   answerHandler = (id, index) => {
@@ -90,7 +100,7 @@ class Quiz extends Component {
       var score = correct / total;
       this.setState({ score: score })
       console.log("The user's score is " + score * 100 + "%")
-
+      // this.updateUser(correct, total);
       // Make an API call to the model containing the user's info, and fetch the user
       // Create a "correctAllTime" variable, set it to the user's current "correct" value from the DB
       // Create a "totalAllTime" variable, set it to the user's current "total" value from the DB

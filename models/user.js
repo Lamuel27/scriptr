@@ -6,7 +6,9 @@ const userSchema = new Schema ({
     nickname: { type: String },
     name: { type: String },
     picture: { type: String },
-    updated_at: { type: String }
+    updated_at: { type: String },
+    correct: { type: Number },
+    total: { type: Number }
 });
 
 const User = mongoose.model("User", userSchema);
