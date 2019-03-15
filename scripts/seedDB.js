@@ -1304,7 +1304,90 @@ const quizSeed = [
         ],
         "correctIndex": 2
     },
-    
+    {
+        "category": "FIDDLE",
+        "question": "Change the title of this HTML page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the banner color from orange to red.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the font-style to comic-sans.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Add a button that will take you to the following link: https://www.youtube.com/watch?v=Vhh_GeBPOhs.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Add a style that will make the background color yellow.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Create a button that, when clicked on, will say 'Hello World!'",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Create a button that, when clicked on, will change the font color to red.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Add an image to this page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Add your own paragraph.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Make it so the content on this page anchors to the left.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Get rid of the HTML container.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the container's width to 90%.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Get rid of the headings on this page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Split this page into 2 columns.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the font style to Montserrat, sans-serif.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Create a button that, when clicked, will send an alert message that says 'I'm sorry Dave, I'm afraid I can't do that'",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the title of this HTML page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the title of this HTML page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the title of this HTML page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the title of this HTML page.",
+    },
+    {
+        "category": "FIDDLE",
+        "question": "Change the title of this HTML page.",
+    },
 
 ];
 

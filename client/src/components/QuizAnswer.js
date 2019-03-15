@@ -10,7 +10,8 @@ function QuizAnswer(props) {
             "marginLeft": "auto",
             "marginRight": "auto",
             "textDecoration": "none",
-            "width": "20%"
+            "width": "50%",
+            "margin-top": "10px"
         }
     }
     return (
