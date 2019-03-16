@@ -10,7 +10,7 @@ class Profile extends Component {
   style = {
     cardBackground: {
       "backgroundColor": "white",
-      "width": "600px",
+      "width": "1000px",
       "height": "400px",
       "marginLeft": "auto",
       "marginRight": "auto",
@@ -19,13 +19,13 @@ class Profile extends Component {
       "borderRadius": "5px"
     },
     cardImage: {
-      "width": "50%"
+      "height":"75%"
     },
     cardContent: {
       "width": "50%",
       "position": "relative",
       "left": "48%",
-      "top": "-450px"
+      "top": "-500px"
     },
     cardTitle: {
       "fontWeight": "semibold"
@@ -75,9 +75,9 @@ class Profile extends Component {
       <div className="container">
         <div className="profile-area">
           <div className="col s12 m7">
-            <div className="card horizontal">
-              <div className="card-image" style={this.style.cardImage}>
-                <img src={profile.picture} alt=""></img>
+            <div className="card horizontal" style={this.style.cardBackground}>
+              <div className="card-image">
+                <img src={profile.picture} style={this.style.cardImage} alt=""></img>
               </div>
               <div className="card-content" style={this.style.cardContent}>
                 <p style={this.style.cardTitle}>Name</p>

@@ -13,6 +13,9 @@ function Flashcard(props) {
             "backgroundColor":"rgba(255,238,211)",
             "fontSize": "large",
             "textAlign": "center"
+        },
+        textStyle: {
+            "fontWeight": "bold"
         }
     }
 
@@ -20,10 +23,10 @@ function Flashcard(props) {
         <div className="flip-card">
             <div className="flip-card-inner">
                 <div className="flip-card-front" style={style.frontStyle}>
-                    <h1>{props.front}</h1>
+                    <h3>{props.front}</h3>
                 </div>
                 <div className="flip-card-back" style={style.backStyle}>
-                    <h1>{props.back}</h1>
+                    <h3 style={style.textStyle}>{props.back}</h3>
                 </div>
             </div>
         </div>

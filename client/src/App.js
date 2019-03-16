@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import ProfileCard from './components/ProfileCard';
+import { Motion, spring } from 'react-motion';
 
 class App extends Component {
 
@@ -42,11 +43,16 @@ class App extends Component {
     const { isAuthenticated } = this.props.auth;
     return (
       <div>
+        <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
+        {interpolatingStyle =>
+        <div style={interpolatingStyle}>
         <Navbar name={this.props} />
         <div style={this.style.pusher}></div>
 
         {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
           <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
+</div>}
+        </Motion>
 
       </div>
     );

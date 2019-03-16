@@ -1,3 +1,11 @@
 .btn-margin {
   margin: 7px 3px;
 }
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}

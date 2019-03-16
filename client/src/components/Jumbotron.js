@@ -20,7 +20,6 @@ class Jumbotron extends Component {
                     <p className="lead" style={this.style.jumboSubtext}>Quizzes. Flashcards. Interactive Problems.</p>
                     <hr className="my-4"></hr>
                     <p style={this.style.jumboSubtext}>Stay on top of your coding skills.</p>
-                    <button className="btn btn-primary btn-lg">Learn more</button>
                 </div>
             </div>
         )

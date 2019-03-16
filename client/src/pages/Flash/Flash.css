@@ -38,7 +38,8 @@ body {
     background-color: #bbb;
     color: black;
     z-index: 2;
-    border-radius: 10px
+    border-radius: 10px;
+    padding: 25px
   }
   
   .flip-card-back {
@@ -47,6 +48,7 @@ body {
     transform: rotateY(180deg);
     border-radius: 10px;
     z-index: 1;
+    padding: 25px;
   }
 
   .grid-container {
@@ -59,4 +61,17 @@ body {
     justify-content: space-between
   }
 
- 
+  .fade-enter {
+    opacity: 0.01;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+  }
