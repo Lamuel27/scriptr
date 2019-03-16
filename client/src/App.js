@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import ProfileCard from './components/ProfileCard';
-import { Motion, spring } from 'react-motion';
+import ProfileCard from './components/ProfileCard'
 
 class App extends Component {
 
   style = {
     pusher: {
       "height": "75px",
-      "color":"white"
+      "color": "white"
     }
   }
 
@@ -29,7 +28,7 @@ class App extends Component {
   renewToken() {
     const { renewSession } = this.props.auth;
     renewSession();
-  }z
+  } z
 
   componentDidMount() {
     const { renewSession } = this.props.auth;
@@ -43,17 +42,11 @@ class App extends Component {
     const { isAuthenticated } = this.props.auth;
     return (
       <div>
-        <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
-        {interpolatingStyle =>
-        <div style={interpolatingStyle}>
-        <Navbar name={this.props} />
-        <div style={this.style.pusher}></div>
+            <Navbar name={this.props} />
+            <div style={this.style.pusher}></div>
 
-        {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
-          <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
-</div>}
-        </Motion>
-
+            {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
+              <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
       </div>
     );
   }
