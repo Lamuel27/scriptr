@@ -3,7 +3,6 @@ import { Panel, ControlLabel, Glyphicon } from 'react-bootstrap';
 import './Profile.css';
 import API from "../../utils/API";
 import '../../Auth/Auth';
-import { Link } from 'react-router-dom';
 
 
 class Profile extends Component {
