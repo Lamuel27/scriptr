@@ -1370,15 +1370,15 @@ const quizSeed = [
     },
     {
         "category": "FIDDLE",
-        "question": "Change the title of this HTML page.",
+        "question": "Embed a YouTube video of your choice.",
     },
     {
         "category": "FIDDLE",
-        "question": "Change the title of this HTML page.",
+        "question": "Make a bulleted of your favorite languages on this page.",
     },
     {
         "category": "FIDDLE",
-        "question": "Change the title of this HTML page.",
+        "question": "Replace the Orange Slice images on this page.",
     },
     {
         "category": "FIDDLE",
