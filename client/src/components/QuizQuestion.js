@@ -4,7 +4,8 @@ function QuizQuestion(props) {
     const style = {
         questionStyle: {
             "fontSize":"large",
-            "textAlign":"center"
+            "textAlign":"center",
+            "color":"black"
         }
     }
 
