@@ -8,26 +8,26 @@ class Navbar extends Component {
         navLogo: {
             "fontFamily": "'Montserrat', sans-serif",
             "fontSize": "x-large",
-            "textShadow": "0px 0px 5px rgba(0,0,0,1)",
+            // "textShadow": "0px 0px 5px rgba(0,0,0,1)",
             "textDecoration": "none",
             "width": "64px",
             "borderRadius": "0px",
             "boxShadow": "none",
             "backgroundColor": "rgba(0,0,0,0)",
             "height": "64px",
-            "color": "white"
+            "color": "black"
         },
         navFont: {
             "fontFamily": "'Montserrat', sans-serif",
             "fontSize": "x-large",
-            "textShadow": "0px 0px 5px rgba(0,0,0,1)",
+            // "textShadow": "0px 0px 5px rgba(0,0,0,1)",
             "textDecoration": "none",
             "width": "150px",
             "borderRadius": "0px",
             "boxShadow": "none",
             "backgroundColor": "rgba(0,0,0,0)",
             "height": "64px",
-            "color": "white"
+            "color": "black"
         },
         floatNav: {
             "left": "25px",
