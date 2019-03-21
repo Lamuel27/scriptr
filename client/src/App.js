@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import ProfileCard from './components/ProfileCard'
+import ProfileCard from './components/ProfileCard';
+import Jumbotron from './components/Jumbotron';
 
 class App extends Component {
 
@@ -41,12 +42,15 @@ class App extends Component {
   render() {
     const { isAuthenticated } = this.props.auth;
     return (
-      <div>
-            <Navbar name={this.props} />
-            <div style={this.style.pusher}></div>
 
-            {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
-              <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
+      <div>
+        <Navbar name={this.props} />
+        <div style={this.style.pusher}></div>
+        <Jumbotron />
+
+        {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
+          <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
+
       </div>
     );
   }
