@@ -8,7 +8,7 @@ class ProfileCard extends Component {
 
     style = {
         cardBackground: {
-            "backgroundColor": "white",
+            "backgroundColor": "rgb(255,195,99)",
             "width": "100px",
             "position": "fixed",
             "top": "25px",
@@ -23,12 +23,18 @@ class ProfileCard extends Component {
             "padding": "10px"
         },
         cardTitle: {
-            "fontWeight": "semibold"
+            "fontWeight": "semibold",
+            "color":"black"
         },
         cardSubtitle: {
             "fontSize": "small",
-            "fontWeight":"lighter"
-        }
+            "fontWeight":"lighter",
+            "color":"black"
+        },
+        cardLink: {
+            "fontWeight": "bold",
+            "color":"black"
+        },
     }
 
     componentWillMount() {
@@ -59,7 +65,7 @@ class ProfileCard extends Component {
                     <p style={this.style.cardSubtitle}>Super-Coder (Level 43)</p>
                 </div></Link>
                 <div class="card-action">
-                    <Link to='/profile' class="header" href="/profile">Profile</Link>
+                    <Link to='/profile' class="header" style={this.style.cardLink} href="/profile">Profile</Link>
                 </div>
             </div>
         )
