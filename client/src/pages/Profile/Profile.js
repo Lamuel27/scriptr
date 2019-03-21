@@ -8,7 +8,7 @@ import '../../Auth/Auth';
 class Profile extends Component {
   style = {
     cardBackground: {
-      "backgroundColor": "white",
+      "backgroundColor": "rgb(255,195,99)",
       "width": "1000px",
       "height": "400px",
       "marginLeft": "auto",
@@ -27,10 +27,12 @@ class Profile extends Component {
       "top": "-500px"
     },
     cardTitle: {
-      "fontWeight": "semibold"
+      "fontWeight": "semibold",
+      "color":"black"
     },
     cardSubtitle: {
-      "fontWeight": "lighter"
+      "fontWeight": "lighter",
+      "color":"black"
     }
   }
 
