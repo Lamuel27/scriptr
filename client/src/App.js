@@ -50,6 +50,8 @@ class App extends Component {
 
         {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
           <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
+        {isAuthenticated() && this.props.location.pathname !== "/flash" && this.props.location.pathname !== "/quiz" && this.props.location.pathname !== "/fiddle" &&
+          <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
 
       </div>
     );
