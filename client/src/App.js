@@ -46,10 +46,12 @@ class App extends Component {
       <div>
         <Navbar name={this.props} />
         <div style={this.style.pusher}></div>
-        <Jumbotron />
+        {!isAuthenticated() && this.props.location.pathname === "/" && <Jumbotron />}
 
         {isAuthenticated() && this.props.location.pathname !== "/fiddle" && this.props.location.pathname !== "/profile" &&
           <ProfileCard name={this.props} onClick={this.goTo.bind(this, 'profile')} />}
+        {isAuthenticated() && this.props.location.pathname === "/home" &&
+          <Jumbotron />}
 
       </div>
     );
